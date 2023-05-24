@@ -10,13 +10,11 @@ import { MODEL_SCHEMAS } from '@echopf/frontend-model';
 import './web/index.css';
 import './web/app.css';
 import languages from '@/src/languages';
-import {
-  TestScreen
-} from './screens';
 
 // Generate required css
 import iconFont from 'react-native-vector-icons/Fonts/MaterialIcons.ttf';
 import ionIconFont from 'react-native-vector-icons/Fonts/Ionicons.ttf';
+import { TScreenConfig } from '@neur0base/app-sdk/lib/typescript/src/layout/LayoutType';
 const iconFontStyles = Platform.OS === 'web' ? `@font-face {
   src: url(${iconFont});
   font-family: MaterialIcons;
@@ -246,7 +244,7 @@ const instances: TInstancesConfig = {
   },
 };
 
-const screens = [
+const screens: TScreenConfig[] = [
   {
     id: '/login',
     needLogin: false,
@@ -257,13 +255,6 @@ const screens = [
         {(props) => LoginScreenTemplate(props, false)}
       </Member.viewModels.MemberLogin>);
     },
-    header: false,
-  },
-  {
-    id: '/',
-    icon: { role: 'header' },
-    label: 'TestScreen',
-    component: TestScreen,
     header: false,
   },
 ];

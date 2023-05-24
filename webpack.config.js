@@ -134,10 +134,10 @@ const exampleAppConfig = {
       extensions: ['.web.tsx', '.web.ts', '.tsx', '.ts', '.web.js', '.js'],
       alias: {
         'react-native$': 'react-native-web',
-        'react-native-twilio-video-webrtc': path.resolve(__dirname, './src/components/NotProvided/index.tsx'),
-        'react-native-push-notification': path.resolve(__dirname, './src/components/NotProvided/PushNotification.tsx'),
-        'react-native-fs': path.resolve(__dirname, './src/components/NotProvided/RNFS.tsx'),
-        'react-native-permissions': path.resolve(__dirname, './src/components/NotProvided/RNPermissions.tsx'),
+        'react-native-twilio-video-webrtc': path.resolve(__dirname, './src/temp/NotProvided/index.tsx'),
+        'react-native-push-notification': path.resolve(__dirname, './src/temp/NotProvided/PushNotification.tsx'),
+        'react-native-fs': path.resolve(__dirname, './src/temp/NotProvided/RNFS.tsx'),
+        'react-native-permissions': path.resolve(__dirname, './src/temp/NotProvided/RNPermissions.tsx'),
         react: path.resolve(
           __dirname,
           "./node_modules/react"
