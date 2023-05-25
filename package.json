@@ -5,7 +5,8 @@
   "scripts": {
     "test": "jest",
     "build:web": "python3 scripts/fix_web.py && node node_modules/.bin/webpack-cli --mode=production",
-    "run:web": "python3 scripts/fix_web.py && node node_modules/.bin/webpack-dev-server"
+    "run:web": "python3 scripts/fix_web.py && node node_modules/.bin/webpack-dev-server",
+    "format": "prettier --write \"src/**/*.{ts,tsx}\""
   },
   "dependencies": {
     "@echopf/frontend-model": "^2.0.84",
@@ -127,6 +128,7 @@
     "metro-react-native-babel-preset": "^0.64.0",
     "mini-css-extract-plugin": "^2.6.1",
     "optimize-css-assets-webpack-plugin": "^6.0.1",
+    "prettier": "^2.8.8",
     "react-native-document-picker": "^8.1.0",
     "react-test-renderer": "17.0.1",
     "style-loader": "^3.3.1",
