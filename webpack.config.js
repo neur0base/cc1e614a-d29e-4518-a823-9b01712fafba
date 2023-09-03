@@ -1,12 +1,12 @@
 const path = require('path');
-const nodeExternals = require('webpack-node-externals');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 const appDirectory = path.resolve(__dirname);
-const {presets} = require(`${appDirectory}/babel.config.js`);
+// const nodeExternals = require('webpack-node-externals');
+// const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
+// const {presets} = require(`${appDirectory}/babel.config.js`);
 
 const compileNodeModules = [
   // Add every react-native package that needs compiling
@@ -46,18 +46,19 @@ const devServer = {
     historyApiFallback: true
 };
 
-const exampleAppConfig = {
-  cache: false,
+const makeAppConfig = (entryPoint, mode = "development") => {
+  return {
+    cache: false,
     entry: [
       'babel-polyfill',
-      './src/main.web.tsx',
+      entryPoint, // './src/main.web.tsx',
     ],
     output: {
         filename: './public/javascript/bundle.js',
         publicPath: '/',
     },
     devServer,
-    mode: "development",
+    mode,
     devtool: 'source-map',
     module: {
         rules: [
@@ -159,7 +160,11 @@ const exampleAppConfig = {
       new webpack.EnvironmentPlugin({ JEST_WORKER_ID: null }),
       new webpack.DefinePlugin({ process: { env: {} } })
     ],
+  };
 };
 
 
-module.exports = [exampleAppConfig];
+module.exports = (env, argv) => {
+  return makeAppConfig(`./src/routing/${env.routing || "default"}/main.web.tsx`, "development");
+}
+// module.exports = [exampleAppConfig];

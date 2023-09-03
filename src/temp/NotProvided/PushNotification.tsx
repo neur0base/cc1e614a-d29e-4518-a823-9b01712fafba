@@ -1,9 +1,8 @@
 export default {
-    localNotification: () => {
-        return null;
-    },
-    configure: () => {
-        return null;
-    },
-
+  localNotification: () => {
+    return null;
+  },
+  configure: () => {
+    return null;
+  },
 };

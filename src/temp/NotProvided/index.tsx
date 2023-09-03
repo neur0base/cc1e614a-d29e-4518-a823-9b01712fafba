@@ -1,9 +1,9 @@
 export const TwilioVideoParticipantView = () => {
-    return null;
+  return null;
 };
 export const TwilioVideo = () => {
-    return null;
+  return null;
 };
 export const TwilioVideoLocalView = () => {
-    return null;
+  return null;
 };

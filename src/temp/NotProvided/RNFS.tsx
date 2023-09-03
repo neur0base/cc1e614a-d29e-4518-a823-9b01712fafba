@@ -1,7 +1,6 @@
 export default {
-    DocumentDirectoryPath: '',
-    downloadFile: () => {
-        return null;
-    },
-
+  DocumentDirectoryPath: '',
+  downloadFile: () => {
+    return null;
+  },
 };

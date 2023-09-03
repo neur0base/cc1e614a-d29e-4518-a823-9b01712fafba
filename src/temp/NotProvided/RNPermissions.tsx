@@ -1,17 +1,17 @@
 export const RESULTS = {
-    DENIED: 'DENIED',
+  DENIED: 'DENIED',
 };
 
 export const PERMISSIONS = {
-    ANDROID: {
-        CAMERA: 'CAMERA',
-    },
+  ANDROID: {
+    CAMERA: 'CAMERA',
+  },
 };
 
 export async function check() {
-    return null;
+  return null;
 }
 
 export async function request() {
-    return null;
+  return null;
 }
