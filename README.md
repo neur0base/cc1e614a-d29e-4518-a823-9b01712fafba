@@ -2,6 +2,8 @@
 
 
 ## Directory Structure
+
+```
 .
 ├── src
 │ ├── components/ # Components library of the app
@@ -11,7 +13,7 @@
 │ └── routing/ # Routing configuration, possibly using libraries like React Router
 ├── temp/ # Temporary components for use with react-native-for-web
 └── web/ # Static HTML and CSS files for the web app
-
+```
 
 ## How to run the template app
 
