@@ -11,7 +11,7 @@
   "dependencies": {
     "@echopf/sdk": "^2.1.2",
     "@gorhom/bottom-sheet": "^4",
-    "@neur0base/app-sdk-core": "^0.0.3",
+    "@neur0base/app-sdk-core": "^0.0.9",
     "@react-native-async-storage/async-storage": "^1.13.2",
     "@react-native-community/checkbox": "^0.5.6",
     "@react-native-community/cli-platform-android": "^11.0.0",
