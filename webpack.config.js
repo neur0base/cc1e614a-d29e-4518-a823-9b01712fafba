@@ -165,6 +165,6 @@ const makeAppConfig = (entryPoint, mode = "development") => {
 
 
 module.exports = (env, argv) => {
-  return makeAppConfig(`./src/routing/${env.routing || "default"}/main.web.tsx`, "development");
+  return makeAppConfig(`./src/routing/${env.routing || "default_web_routing"}/main.web.tsx`, "development");
 }
 // module.exports = [exampleAppConfig];
