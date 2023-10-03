@@ -10,6 +10,8 @@ import '../../web/index.css';
 import '../../web/app.css';
 
 import instances from '../../config/instances';
+import themeColors from '../../config/themeColors';
+import locales from '../../locales';
 import * as components from '../../components';
 import * as models from '../../models';
 import { appConfig, layout, mainRouteID } from './app';
@@ -33,6 +35,10 @@ const App = () => {
             OuterProvider={(props) => {
                 return (<>{props.children}</>);
             }}
+            theme={{
+                colors: themeColors
+            }}
+            locales={locales}
         />
     );
 };
