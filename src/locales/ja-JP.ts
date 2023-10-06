@@ -1,7 +1,7 @@
 import { LocaleConfig } from "@neur0base/app-sdk-core";
 
 const locale: LocaleConfig = {
-  language: {
+  labels: {
     common: {
     },
     error: {
@@ -48,7 +48,9 @@ const locale: LocaleConfig = {
     route: {
 
     }
-  }
+  },
+  isPrimary: false,
+  type: "Custom"
 };
 
 export default locale;
