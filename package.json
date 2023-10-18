@@ -11,7 +11,7 @@
   "dependencies": {
     "@echopf/sdk": "^2.1.2",
     "@gorhom/bottom-sheet": "^4",
-    "@neur0base/app-sdk-core": "^0.0.11",
+    "@neur0base/app-sdk-core": "^0.0.13",
     "@react-native-async-storage/async-storage": "^1.13.2",
     "@react-native-community/checkbox": "^0.5.6",
     "@react-native-community/cli-platform-android": "^11.0.0",
@@ -94,11 +94,11 @@
   },
   "devDependencies": {
     "@babel/core": "^7.12.9",
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "@babel/preset-env": "^7.19.4",
     "@babel/preset-react": "^7.18.6",
     "@babel/preset-typescript": "^7.18.6",
     "@babel/runtime": "^7.12.5",
-    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "@react-native-community/eslint-config": "^2.0.0",
     "@rollup/plugin-replace": "^3.0.1",
     "@types/jasmine": "^4.3.0",
