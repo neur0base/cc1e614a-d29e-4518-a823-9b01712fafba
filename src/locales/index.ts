@@ -1,5 +1,5 @@
-import { LocalesConfig } from '@neur0base/app-sdk-core';
 import jaJP from './ja-JP';
+import { LocalesConfig } from './types';
 
 const locales: LocalesConfig = {
   'ja-JP': jaJP

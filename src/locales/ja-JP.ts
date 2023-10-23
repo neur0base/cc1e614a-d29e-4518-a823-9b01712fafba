@@ -1,4 +1,4 @@
-import { LocaleConfig } from "@neur0base/app-sdk-core";
+import { LocaleConfig } from "./types";
 
 const locale: LocaleConfig = {
   labels: {
