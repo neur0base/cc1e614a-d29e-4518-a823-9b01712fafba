@@ -6,6 +6,7 @@
     "test": "jest",
     "build:web": "python3 scripts/fix_web.py && node node_modules/.bin/webpack-cli --mode=production",
     "run:web": "python3 scripts/fix_web.py && node node_modules/.bin/webpack-dev-server",
+    "build": "yarn build:web",
     "format": "prettier --write \"src/**/*.{ts,tsx}\""
   },
   "dependencies": {
