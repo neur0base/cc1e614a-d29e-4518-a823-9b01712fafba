@@ -6,8 +6,9 @@
     "test": "jest",
     "build:web": "python3 scripts/fix_web.py && node node_modules/.bin/webpack-cli --mode=production",
     "run:web": "python3 scripts/fix_web.py && node node_modules/.bin/webpack-dev-server",
-    "build": "yarn build:web",
-    "format": "prettier --write \"src/**/*.{ts,tsx}\""
+    "build": "yarn lint && yarn build:web",
+    "format": "prettier --write \"src/**/*.{ts,tsx}\"",
+    "lint": "node node_modules/eslint/bin/eslint.js src/**/*.ts"
   },
   "dependencies": {
     "@echopf/sdk": "^2.1.2",
