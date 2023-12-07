@@ -6,14 +6,16 @@
     "test": "jest",
     "build:web": "python3 scripts/fix_web.py && node node_modules/.bin/webpack-cli --mode=production",
     "run:web": "python3 scripts/fix_web.py && node node_modules/.bin/webpack-dev-server",
-    "build": "yarn lint && yarn build:web",
+    "build": "yarn build:web",
     "format": "prettier --write \"src/**/*.{ts,tsx}\"",
-    "lint": "node node_modules/eslint/bin/eslint.js src/**/*.ts"
+    "lint:all": "node node_modules/eslint/bin/eslint.js 'src/**/*.{js,jsx,ts,tsx}'",
+    "lint": "node node_modules/eslint/bin/eslint.js"
   },
   "dependencies": {
     "@echopf/sdk": "^2.1.2",
     "@gorhom/bottom-sheet": "^4",
-    "@neur0base/app-sdk-core": "^0.0.13",
+    "@neur0base/app-sdk-core": "^0.0.26",
+    "@neur0base/app-sdk-ui": "^0.0.8",
     "@react-native-async-storage/async-storage": "^1.13.2",
     "@react-native-community/checkbox": "^0.5.6",
     "@react-native-community/cli-platform-android": "^11.0.0",
@@ -90,6 +92,8 @@
     "react-select": "^5.2.2",
     "react-string-replace": "^1.1.0",
     "rn-sliding-up-panel": "^2.4.3",
+    "tailwind-rn": "3.0.1",
+    "tailwindcss": "^3.3.5",
     "ts-node": "^10.9.1",
     "uuid": "^8.3.2",
     "yup": "^0.29.3"
