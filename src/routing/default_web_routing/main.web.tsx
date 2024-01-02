@@ -12,8 +12,9 @@ import '../../web/app.css';
 import instances from '../../config/instances';
 import themeColors from '../../config/themeColors';
 import locales from '../../locales';
-import * as components from '../../components';
-import * as models from '../../models';
+import * as components from '../../components/views';
+import * as mockModels from '../../components/mockModels';
+import * as models from '../../components/models';
 import { appConfig, layout, mainRouteID } from './app';
 import routes from './routes';
 
@@ -27,7 +28,7 @@ const App = () => {
             config={appConfig}
             layout={layout}
             backend={backendClient}
-            models={models}
+            models={process.env.ENVIRONMENT === "production" ? models : mockModels}
             instances={instances}
             components={components}
             routes={routes}
