@@ -20,8 +20,8 @@ import routes from './routes';
 
 const App = () => {
 
-    // [ToDo] Set secureDomain & appID & appKey by env variables
-    const backendClient = initialize("test", "test", "test");
+    // [ToDo] Obfuscate secureDomain & appID & appKey by env variables
+    const backendClient = initialize(process.env.API_ENDPOINT, process.env.API_APP_ID, process.env.API_APP_KEY);
 
     return (
         <DynamicRouter

@@ -42,7 +42,7 @@ const compileNodeModules = [
 
 const devServer = {
     compress: false,
-    port: process.env.PORT || 9010,
+    port: process.env.PORT || 9020,
     historyApiFallback: true
 };
 
@@ -57,6 +57,7 @@ const makeAppConfig = (entryPoint, mode = "development") => {
         filename: './public/javascript/bundle.js',
         publicPath: '/',
     },
+    performance: { hints: false },
     devServer,
     mode,
     devtool: 'source-map',
@@ -158,13 +159,20 @@ const makeAppConfig = (entryPoint, mode = "development") => {
         __DEV__: JSON.stringify(true),
       }),
       new webpack.EnvironmentPlugin({ JEST_WORKER_ID: null }),
-      new webpack.DefinePlugin({ process: { env: {} } })
+      new webpack.DefinePlugin({ process: { env: {
+        ENVIRONMENT: JSON.stringify(process?.env?.ENVIRONMENT || "development"),
+        API_ENDPOINT: JSON.stringify(process?.env?.API_ENDPOINT),
+        API_APP_ID: JSON.stringify(process?.env?.API_APP_ID),
+        API_APP_KEY: JSON.stringify(process?.env?.API_APP_KEY),
+      } } })
     ],
   };
 };
 
-
 module.exports = (env, argv) => {
-  return makeAppConfig(`./src/routing/${env.routing || "default_web_routing"}/main.web.tsx`, "development");
+  return makeAppConfig(
+    `./src/routing/${process?.env?.ROUTING_ID || "default_web_routing"}/main.web.tsx`,
+    process?.env?.ENVIRONMENT || "development"
+  );
 }
 // module.exports = [exampleAppConfig];
