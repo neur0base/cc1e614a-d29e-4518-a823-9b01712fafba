@@ -18,7 +18,7 @@
 ## How to run the template app
 
 1. Run `yarn`
-2. Run `yarn run:web --env routing={routingName}`
-3. Access to http://localhost:9010/
+2. Run `PORT=9030 ROUTING_ID="routingName" API_ENDPOINT="test" API_APP_ID="test" API_APP_KEY="test" ENVIRONMENT="production" yarn run:web`
+3. Access to http://localhost:9030/
 
 You can check the routingName as /src/routing/{routingName}
