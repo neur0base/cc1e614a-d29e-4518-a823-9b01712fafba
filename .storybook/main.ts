@@ -7,6 +7,8 @@ const config: StorybookConfig = {
     '../src/**/*.mdx',
     '../src/**/*.stories.@(js|jsx|ts|tsx)',
     '../src/**/**/*.stories.@(js|jsx|ts|tsx)',
+    '../src/**/*.story.@(js|jsx|ts|tsx)',
+    '../src/**/**/*.story.@(js|jsx|ts|tsx)',
   ],
   // staticDirs: ['../assets'], //👈 Configures the static asset folder in Storybook
   addons: [
