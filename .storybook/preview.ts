@@ -1,36 +1,6 @@
 import type {Preview} from '@storybook/react';
-import '@/src/web/index.css';
-// import i18n from './i18next';
-// import FontAwesome from '../node_modules/react-native-vector-icons/FontAwesome';
-// import IconFont from '../node_modules/react-native-vector-icons/Fonts/FontAwesome.ttf';
-
-const iconFontStyle = ""; /*`
-  @font-face {
-    src: url(${IconFont});
-    font-family: FontAwesome;
-  }
-`;
-
-const style = document.createElement('style');
-style.type = 'text/css';
-if (style.styleSheet) {
-  style.styleSheet.cssText = iconFontStyle;
-} else {
-  style.appendChild(document.createTextNode(iconFontStyle));
-}
-document.head.appendChild(style);
-*/
-
-/*
-import withAPIProvider from './withAPIProvider';
-import { initialize, mswLoader } from 'msw-storybook-addon';
-import mswHandlers from '@/src/services/mswHandlers';
-initialize(); // Initialize MSW
-import withAppProvider from './withAppProvider';
-import withUserProvider from './withUserProvider';
-import withWorkspaceProvider from './withWorkspaceProvider';
-import withMessageProvider from "./withMessageProvider";
-*/
+// import '@/src/web/index.css';
+import { withScreenshot } from 'storycap';
 import withProvider from './withProvider';
 
 const preview: Preview = {
@@ -49,12 +19,17 @@ const preview: Preview = {
         date: /Date$/,
       },
     },
+    screenshot: {
+    	delay: 10,
+	    fullPage: false,
+    }
     // i18n,
   },
   loaders: [
   ],
   decorators: [
     withProvider,
+    withScreenshot
   ],
 };
 
