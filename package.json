@@ -10,12 +10,12 @@
     "format": "prettier --write \"src/**/*.{ts,tsx}\"",
     "lint:all": "node node_modules/eslint/bin/eslint.js 'src/**/*.{js,jsx,ts,tsx}'",
     "lint": "node node_modules/eslint/bin/eslint.js",
-    "run:storybook": "storybook dev -p 6006"
+    "run:storybook": "node node_modules/@storybook/cli/bin/index.js dev"
   },
   "dependencies": {
     "@echopf/sdk": "^2.1.2",
     "@gorhom/bottom-sheet": "^4",
-    "@neur0base/app-sdk-core": "^0.0.44",
+    "@neur0base/app-sdk-core": "^0.0.45",
     "@neur0base/app-sdk-ui": "^0.0.20",
     "@react-native-async-storage/async-storage": "^1.13.2",
     "@react-native-community/checkbox": "^0.5.6",
