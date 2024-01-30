@@ -12,13 +12,15 @@ const config: StorybookConfig = {
   ],
   // staticDirs: ['../assets'], //👈 Configures the static asset folder in Storybook
   addons: [
+    'storycap',
+    '@storybook/jest',
     '@storybook/addon-links',
     '@storybook/addon-essentials',
     '@storybook/addon-interactions',
     // 'storybook-react-i18next',
   ],
   docs: {
-    autodocs: true,
+    autodocs: false,
   },
   webpackFinal: async (config, {configType}) => {
     config.devtool = 'source-map';
