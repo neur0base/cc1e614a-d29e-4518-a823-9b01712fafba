@@ -1,0 +1,18 @@
+{
+  "openapi": "3.0.2",
+  "info": {
+    "version": "0.1.0",
+    "title": "Jenio-CodeDir-Template workflow"
+  },
+  "servers": [
+    {
+        "url": "http://localhost:3000"
+    }
+  ],
+  "paths": {
+
+  },
+  "components": {
+
+  }
+}
