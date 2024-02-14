@@ -17,5 +17,5 @@ RUN apt-get update && apt-get install -y curl git && \
 
 EXPOSE 3000
 
-WORKDIR /home/ubuntu/sys/Jenio-CodeDir-Template/workflows
+WORKDIR /home/ubuntu/sys/workflows
 CMD ["pm2-runtime", "start", "ecosystem.config.js"]

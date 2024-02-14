@@ -6,6 +6,6 @@ services:
       context: .
       dockerfile: Dockerfile
     volumes:
-      - ~/Jenio-CodeDir-Template:/home/ubuntu/sys/Jenio-CodeDir-Template
+      - ~/Jenio-CodeDir-Template:/home/ubuntu/sys/
     ports:
       - "3000:3000"
