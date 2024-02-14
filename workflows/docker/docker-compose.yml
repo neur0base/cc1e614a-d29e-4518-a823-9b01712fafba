@@ -5,6 +5,10 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
+    args:
+        - ECHO_APP_DOMAIN=
+        - ECHO_APP_ID=
+        - ECHO_APP_KEY=
     volumes:
       - ~/Jenio-CodeDir-Template:/home/ubuntu/sys/
     ports:
