@@ -4,10 +4,13 @@
   "main": "dist/index.js",
   "license": "MIT",
   "scripts": {
-    "run:dev": "node -r dotenv/config node_modules/nodemon/bin/nodemon.js dotenv_config_path=.env.debug",
-    "build": "node_modules/typescript/bin/tsc"
+    "build": "node_modules/typescript/bin/tsc",
+    "gen:client": "npx @rtk-query/codegen-openapi ./client/openapi-config.json && echo '// @ts-nocheck' > tmpfile && echo 'export { api } from \"./baseApi\";' >> tmpfile && cat ./client/coreApi.ts >> tmpfile && mv tmpfile ./client/coreApi.ts",
+    "gen:docs": "npx @redocly/cli build-docs schema.json -o ./docs/index.html",
+    "run:dev": "node -r dotenv/config node_modules/nodemon/bin/nodemon.js dotenv_config_path=.env.debug"
   },
   "dependencies": {
+    "@neur0base/app-sdk-core": "^0.0.45",
     "body-parser": "^1.20.2",
     "cors": "^2.8.5",
     "dotenv": "^16.4.4",
