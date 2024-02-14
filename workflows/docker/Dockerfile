@@ -18,4 +18,5 @@ RUN apt-get update && apt-get install -y curl git && \
 EXPOSE 3000
 
 WORKDIR /home/ubuntu/sys/workflows
+RUN yarn install
 CMD ["pm2-runtime", "start", "ecosystem.config.js"]
