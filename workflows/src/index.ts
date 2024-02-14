@@ -6,6 +6,8 @@ import * as bodyParser from "body-parser";
 import cors from "cors";
 import * as dotenv from "dotenv";
 
+import useECHO from "./middlewares/useECHO.js";
+
 dotenv.config();
 
 const app = express();
@@ -21,7 +23,12 @@ initialize({
 	app: app,
 	apiDoc: path.resolve(__dirname, "../schema.json"),
 	validateApiDoc: true,
-	operations: operations,
+	operations: Object.fromEntries(Object.keys(operations).map(
+		(operationId) => [
+			 operationId, 
+			 [useECHO, operations[operationId]]
+		]
+	)),
     consumesMiddleware: {
         'application/json': bodyParser.json(),
         'text/text': bodyParser.text(),
