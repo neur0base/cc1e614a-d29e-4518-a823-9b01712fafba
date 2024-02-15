@@ -54,8 +54,9 @@ const makeAppConfig = (entryPoint, mode = "development") => {
       entryPoint, // './src/main.web.tsx',
     ],
     output: {
-        filename: './public/javascript/bundle.js',
-        publicPath: '/',
+      path: path.resolve(__dirname, 'dist/' + (process?.env?.ROUTING_ID || "default_web_routing") + "/"),
+      filename: './public/javascript/bundle.js',
+      publicPath: '/',
     },
     performance: { hints: false },
     devServer,
