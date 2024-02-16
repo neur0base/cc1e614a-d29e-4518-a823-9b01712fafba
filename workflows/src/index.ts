@@ -19,16 +19,21 @@ app.listen(3000, () => {
 	console.log("Start on port 3000");
 });
 
+const operationsWithMiddlewares = Object.fromEntries(Object.keys(operations).map(
+	(operationId) => [
+		operationId,
+		[
+			useECHO,
+			operations[operationId],
+		]
+	]
+));
+
 initialize({
 	app: app,
 	apiDoc: path.resolve(__dirname, "../schema.json"),
 	validateApiDoc: true,
-	operations: Object.fromEntries(Object.keys(operations).map(
-		(operationId) => [
-			 operationId, 
-			 [useECHO, operations[operationId]]
-		]
-	)),
+	operations: operationsWithMiddlewares,
     consumesMiddleware: {
         'application/json': bodyParser.json(),
         'text/text': bodyParser.text(),

@@ -10,7 +10,63 @@
     }
   ],
   "paths": {
-
+    "/get-and-save-data": {
+      "post": {
+        "summary": "Save text data and return an ID",
+        "description": "Receives a text in the request body and saves it on the server. Returns an ID if successful, or an error message if it fails.",
+        "operationId": "getAndSaveData",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "text": {
+                    "type": "string",
+                    "description": "Text data to be saved."
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Data saved successfully.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "string",
+                      "description": "Unique identifier for the saved data."
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Error in saving data.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "error_message": {
+                      "type": "string",
+                      "description": "Description of the failure."
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
   },
   "components": {
 
