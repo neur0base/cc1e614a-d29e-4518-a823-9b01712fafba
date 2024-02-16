@@ -8,7 +8,7 @@ export default async function useECHO(req: Request, res: Response, next: NextFun
     const appId = String(process.env.ECHO_APP_ID);
     const appKey = String(process.env.ECHO_APP_KEY);
 
-    const client = initialize(domain, appId, appKey, {accessToken: req?.headers?.["X-ECHO-Access-Token"] || undefined});
+    const client = initialize(domain, appId, appKey, {accessToken: req?.headers?.["X-ECHO-Access-Token"] || ""});
     res.locals.echo = client;
 
     next();
