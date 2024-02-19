@@ -1,11 +1,11 @@
 import PythonLogicTemplate from "../templates/PythonLogicTemplate/index.js";
 
 const pythonCode = `
-    result = {
-        'std': np.std(inputData.data_array),
-        'mean': np.mean(inputData.data_array)
-    }
-    print(result)
+result = {
+    'std': np.std(inputData.data_array),
+    'mean': np.mean(inputData.data_array)
+}
+print(result)
 `;
 declare type T = { // 入力の型定義
     data_array: number[];
