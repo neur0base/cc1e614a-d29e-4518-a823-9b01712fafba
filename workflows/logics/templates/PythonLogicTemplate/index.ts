@@ -35,7 +35,8 @@ import sys,json
 import pandas as pd
 ${libraryImportString}
 
-inputData = json.loads(sys.stdin.readline())
+inputData = json.loads(sys.argv[1])
+
 
 ${props.pythonCode}
 `;
@@ -43,10 +44,12 @@ ${props.pythonCode}
         const options = {
             args: [JSON.stringify(input)],
         };
-        const stdOutStrings = await PythonShell.runString(pythonCode, options);
-        const returnData: Object = JSON.parse(stdOutStrings.join(''));
+        const stdOutStrings: string[] = await PythonShell.runString(pythonCode, options);
 
-        return returnData as U;
+        const jsonString: string = stdOutStrings.join('').replace(/'/g, '"');
+        const resultData: Object = JSON.parse(jsonString);
+
+        return resultData as U;
 
     };
     return { exec };

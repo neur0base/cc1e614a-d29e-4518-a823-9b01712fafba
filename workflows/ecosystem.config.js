@@ -1,7 +1,7 @@
 module.exports = {
     apps : [{
         name: "Jenify-CodeDir-Template",
-        script: "node dist/index.js",
+        script: "node dist/src/index.js",
         instances: 1,
         autorestart: true,
         watch: false,
