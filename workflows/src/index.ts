@@ -31,7 +31,7 @@ const operationsWithMiddlewares = Object.fromEntries(Object.keys(operations).map
 
 initialize({
 	app: app,
-	apiDoc: path.resolve(__dirname, "../schema.json"),
+	apiDoc: path.resolve(__dirname, "../../schema.json"),
 	validateApiDoc: true,
 	operations: operationsWithMiddlewares,
     consumesMiddleware: {

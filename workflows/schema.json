@@ -66,6 +66,70 @@
           }
         }
       }
+    },
+    "/get-std-mean": {
+      "post": {
+        "summary": "Calculate the mean and standard deviation of numbers in an array",
+        "description": "Receives a number array in the request body and calculate the mean and standard deviation. Returns an result if successful, or an error message if it fails.",
+        "operationId": "getStdMean",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "dataArray": {
+                    "type": "array",
+                    "items": {
+                      "type": "number",
+                      "description": "number to calculate"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Data calculation successful.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "mean": {
+                      "type": "number",
+                      "description": "average value"
+                    },
+                    "std": {
+                      "type": "number",
+                      "description": "standard deviation"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Error in data calculation.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "error_message": {
+                      "type": "string",
+                      "description": "Description of the failure."
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
     }
   },
   "components": {
