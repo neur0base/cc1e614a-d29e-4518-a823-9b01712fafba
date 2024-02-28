@@ -12,7 +12,7 @@ import '../../web/app.css';
 import instances from '../../config/instances';
 import themeColors from '../../config/themeColors';
 import locales from '../../locales';
-import * as components from '../../components/views';
+import * as components from './routes/index';
 import * as mockModels from '../../components/mockModels';
 import * as models from '../../components/models';
 import { appConfig, layout, mainRouteID } from './app';
