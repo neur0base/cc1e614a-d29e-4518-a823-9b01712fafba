@@ -8,6 +8,8 @@ const appDirectory = path.resolve(__dirname);
 // const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 // const {presets} = require(`${appDirectory}/babel.config.js`);
 
+const extensions = ['.web.tsx', '.web.ts', '.tsx', '.ts', '.web.js', '.js'];
+
 const compileNodeModules = [
   // Add every react-native package that needs compiling
   // e.g. 'react-native-gesture-handler',
@@ -95,7 +97,8 @@ const makeAppConfig = (entryPoint, mode = "development") => {
                         ['react-native-reanimated/plugin'],
                         ['react-native-web'],
                         ["module-resolver", {
-                          "alias": {
+			  extensions,
+                          alias: {
                             "^react-native$": "react-native-web",
                             '@/src': path.resolve(__dirname, './src'),
                           }
@@ -134,7 +137,7 @@ const makeAppConfig = (entryPoint, mode = "development") => {
     },
     resolve: {
       symlinks: true,
-      extensions: ['.web.tsx', '.web.ts', '.tsx', '.ts', '.web.js', '.js'],
+      extensions,
       alias: {
         'react-native$': 'react-native-web',
         'react-native-twilio-video-webrtc': path.resolve(__dirname, './src/temp/NotProvided/index.tsx'),
