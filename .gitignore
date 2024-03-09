@@ -4,7 +4,6 @@ dist/
 __screenshots__/
 .DS_Store
 yarn.lock
-pnpm-lock.yaml
 outline_prompt.db
 uncommittedStatus.json
 *.swp
