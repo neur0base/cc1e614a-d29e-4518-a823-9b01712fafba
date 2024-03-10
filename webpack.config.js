@@ -97,7 +97,7 @@ const makeAppConfig = (entryPoint, mode = "development") => {
                         ['react-native-reanimated/plugin'],
                         ['react-native-web'],
                         ["module-resolver", {
-			  extensions,
+                          extensions,
                           alias: {
                             "^react-native$": "react-native-web",
                             '@/src': path.resolve(__dirname, './src'),
@@ -118,7 +118,7 @@ const makeAppConfig = (entryPoint, mode = "development") => {
                 sideEffects: true
             },
             {
-                test: /\.(woff|woff2|eot|otf)$/,
+                test: /\.(woff|woff2|eot|ttf|otf)$/,
                 use : [
                     'file-loader',
                 ],
@@ -127,11 +127,6 @@ const makeAppConfig = (entryPoint, mode = "development") => {
                 test   : /\.(jpe?g|png|gif|svg)$/i,
                 loader : 'url-loader',
                 options: {},
-            },
-            {
-                test: /\.ttf$/,
-                loader: 'url-loader',
-                include: path.resolve(__dirname, 'node_modules/react-native-vector-icons'),
             },
         ],
     },

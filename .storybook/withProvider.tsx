@@ -1,12 +1,12 @@
 import React from 'react';
 import { initialize } from '@echopf/sdk';
 import instances from '../src/config/instances';
-import themeColors from '../src/config/themeColors';
-import locales from '../src/locales';
 import * as mockModels from '../src/components/mockModels';
 import { AppConfig, LayoutComponentConfig } from '@neur0base/app-sdk-core';
 import * as components from '../src/components/views';
 import { AppContextProvider, UIProvider } from '@neur0base/app-sdk-core';
+import themeColors from '../src/config/themeColors';
+import locales from '../src/locales';
 
 export const appConfig: AppConfig = {
   name: 'Jenio Temp App',
@@ -30,15 +30,9 @@ export const appConfig: AppConfig = {
       ],
     },
   ],
+  mainRouteID: "home",
+  layout: {},
 };
-
-export const layout: LayoutComponentConfig = {
-  component: {
-      componentID: "CommonLayoutComponent"
-  }
-};
-
-export const mainRouteID: string = "home";
 
 export default function withBackendProvider(Story, context) {
   const backendClient = initialize("cucom3.echopf.com", "d979cfc8289bba8087c852393718fa7b", "91461eaf48dd50c72ebde9e088c43e2e");
@@ -51,14 +45,11 @@ export default function withBackendProvider(Story, context) {
       routes={[]}
       components={components}
       models={mockModels}
-      layout={layout}
-      /*
-      languages={languages}
-      defaultLanguage={defaultLanguage}
-      theme={theme}
-      */
       >
-      <UIProvider>
+      <UIProvider
+        themeColors={themeColors}
+        locales={locales}
+        >
         <Story {...context} />
       </UIProvider>
     </AppContextProvider>
