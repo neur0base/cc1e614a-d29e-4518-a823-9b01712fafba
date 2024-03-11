@@ -19,11 +19,11 @@ dependencies:
     specifier: ^4
     version: 4.6.1(@types/react-native@0.63.75)(@types/react@17.0.76)(react-native-gesture-handler@1.10.3)(react-native-reanimated@2.2.4)(react-native@0.63.3)(react@17.0.2)
   '@neur0base/app-sdk-core':
-    specifier: ^0.0.84
-    version: 0.0.84(@babel/core@7.24.0)(@react-native-community/masked-view@0.1.11)(react-native-gesture-handler@1.10.3)(react-native-safe-area-context@3.4.1)(react-native-screens@2.18.1)
+    specifier: ^0.0.88
+    version: 0.0.88(@babel/core@7.24.0)(@react-native-community/masked-view@0.1.11)(react-native-gesture-handler@1.10.3)(react-native-safe-area-context@3.4.1)(react-native-screens@2.18.1)
   '@neur0base/app-sdk-ui':
-    specifier: ^0.0.24
-    version: 0.0.24(@babel/core@7.24.0)(@react-native-community/masked-view@0.1.11)(react-native-gesture-handler@1.10.3)(react-native-safe-area-context@3.4.1)(react-native-screens@2.18.1)(typescript@4.9.5)
+    specifier: ^0.0.28
+    version: 0.0.28(@babel/core@7.24.0)(@react-native-community/masked-view@0.1.11)(react-native-gesture-handler@1.10.3)(react-native-safe-area-context@3.4.1)(react-native-screens@2.18.1)(typescript@4.9.5)
   '@react-native-async-storage/async-storage':
     specifier: ^1.13.2
     version: 1.22.3(react-native@0.63.3)
@@ -3343,8 +3343,8 @@ packages:
       tar-fs: 2.1.1
     dev: false
 
-  /@neur0base/app-sdk-core@0.0.84(@babel/core@7.24.0)(@react-native-community/masked-view@0.1.11)(react-native-gesture-handler@1.10.3)(react-native-safe-area-context@3.4.1)(react-native-screens@2.18.1):
-    resolution: {integrity: sha512-oNkZHOyB/N3BCXFDXhXyIpbkFgli60AoCACkFMFj+awirhv+QDEw1s5CsvyxeMxSRVotGeQOpClb7ptNg/Acxg==, tarball: https://npm.pkg.github.com/download/@neur0base/app-sdk-core/0.0.84/357e476e6faf4a17ad1b26dcb42c7fc8ff7717c6}
+  /@neur0base/app-sdk-core@0.0.88(@babel/core@7.24.0)(@react-native-community/masked-view@0.1.11)(react-native-gesture-handler@1.10.3)(react-native-safe-area-context@3.4.1)(react-native-screens@2.18.1):
+    resolution: {integrity: sha512-wZ3AAQDeLBF7/Q2CemNrOcoe9w9f385zGTyZEC8+fhpARuS51N8hv+WhG4gNHn4kJt+wUhaDhiKlAwfLdRTN0w==, tarball: https://npm.pkg.github.com/download/@neur0base/app-sdk-core/0.0.88/6998ee96db4aceac597da8008c595ce711b7ec89}
     dependencies:
       '@babel/preset-env': 7.19.4(@babel/core@7.24.0)
       '@babel/preset-react': 7.18.6(@babel/core@7.24.0)
@@ -3375,14 +3375,14 @@ packages:
       - utf-8-validate
     dev: false
 
-  /@neur0base/app-sdk-ui@0.0.24(@babel/core@7.24.0)(@react-native-community/masked-view@0.1.11)(react-native-gesture-handler@1.10.3)(react-native-safe-area-context@3.4.1)(react-native-screens@2.18.1)(typescript@4.9.5):
-    resolution: {integrity: sha512-Gjn+5djk6/LvZ0/wQ5r0EyE4aA5Rpa0THgS0WaJEwzClgsoQaDs7LnzumU84eUFFt5gaI3XVAEGl5WTIm15Q2g==, tarball: https://npm.pkg.github.com/download/@neur0base/app-sdk-ui/0.0.24/cf79c60c78691fbd53ca4fe8968ffef24252cd6a}
+  /@neur0base/app-sdk-ui@0.0.28(@babel/core@7.24.0)(@react-native-community/masked-view@0.1.11)(react-native-gesture-handler@1.10.3)(react-native-safe-area-context@3.4.1)(react-native-screens@2.18.1)(typescript@4.9.5):
+    resolution: {integrity: sha512-C6wwd48p73gyL5lhoAs0tUkJj/S6ULEMIwmxaYNIugSYm2uE4fwvNto6w6SwzMHlZYYxpfcQ2UIBWNlSKr9mJw==, tarball: https://npm.pkg.github.com/download/@neur0base/app-sdk-ui/0.0.28/ce651c926730d08597c6d3df39e5933f0bc887d3}
     dependencies:
       '@babel/preset-env': 7.19.4(@babel/core@7.24.0)
       '@babel/preset-react': 7.18.6(@babel/core@7.24.0)
       '@babel/preset-typescript': 7.18.6(@babel/core@7.24.0)
       '@echopf/sdk': 2.1.4
-      '@neur0base/app-sdk-core': 0.0.84(@babel/core@7.24.0)(@react-native-community/masked-view@0.1.11)(react-native-gesture-handler@1.10.3)(react-native-safe-area-context@3.4.1)(react-native-screens@2.18.1)
+      '@neur0base/app-sdk-core': 0.0.88(@babel/core@7.24.0)(@react-native-community/masked-view@0.1.11)(react-native-gesture-handler@1.10.3)(react-native-safe-area-context@3.4.1)(react-native-screens@2.18.1)
       '@react-native-async-storage/async-storage': 1.22.3(react-native@0.63.3)
       '@react-navigation/native': 5.9.8(react-native@0.63.3)(react@17.0.2)
       '@react-navigation/stack': 5.14.9(@react-native-community/masked-view@0.1.11)(@react-navigation/native@5.9.8)(react-native-gesture-handler@1.10.3)(react-native-safe-area-context@3.4.1)(react-native-screens@2.18.1)(react-native@0.63.3)(react@17.0.2)
