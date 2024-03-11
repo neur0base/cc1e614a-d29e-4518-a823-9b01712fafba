@@ -13,10 +13,10 @@
     "run:storybook": "node node_modules/@storybook/cli/bin/index.js dev"
   },
   "dependencies": {
-    "@echopf/sdk": "^2.1.2",
+    "@echopf/sdk": "^2.1.4",
     "@gorhom/bottom-sheet": "^4",
-    "@neur0base/app-sdk-core": "^0.0.53",
-    "@neur0base/app-sdk-ui": "^0.0.20",
+    "@neur0base/app-sdk-core": "^0.0.84",
+    "@neur0base/app-sdk-ui": "^0.0.24",
     "@react-native-async-storage/async-storage": "^1.13.2",
     "@react-native-community/checkbox": "^0.5.6",
     "@react-native-community/cli-platform-android": "^11.0.0",
