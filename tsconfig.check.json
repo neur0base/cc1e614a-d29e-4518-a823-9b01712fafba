@@ -6,7 +6,7 @@
     "allowJs": true,
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
-    "isolatedModules": true,
+    "isolatedModules": false,
     "jsx": "react",
     "lib": [
       "es6",
@@ -15,7 +15,7 @@
       "es2017"
     ],
     "moduleResolution": "node",
-    "noEmit": false,
+    "noEmit": true,
     "target": "ES5",
     "module": "CommonJS",
     "resolveJsonModule": true,
@@ -30,5 +30,8 @@
     "metro.config.js",
     "jest.config.js",
     "vite.config.js"
+  ],
+  "include": [
+    "src/**/*"
   ]
 }
