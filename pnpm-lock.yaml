@@ -19,11 +19,11 @@ dependencies:
     specifier: ^4
     version: 4.6.1(@types/react-native@0.63.75)(@types/react@17.0.76)(react-native-gesture-handler@1.10.3)(react-native-reanimated@2.2.4)(react-native@0.63.3)(react@17.0.2)
   '@neur0base/app-sdk-core':
-    specifier: ^0.0.88
-    version: 0.0.88(@babel/core@7.24.0)(@react-native-community/masked-view@0.1.11)(react-native-gesture-handler@1.10.3)(react-native-safe-area-context@3.4.1)(react-native-screens@2.18.1)
+    specifier: ^0.0.89
+    version: 0.0.89(@babel/core@7.24.0)(@react-native-community/masked-view@0.1.11)(react-native-gesture-handler@1.10.3)(react-native-safe-area-context@3.4.1)(react-native-screens@2.18.1)
   '@neur0base/app-sdk-ui':
-    specifier: ^0.0.28
-    version: 0.0.28(@babel/core@7.24.0)(@react-native-community/masked-view@0.1.11)(react-native-gesture-handler@1.10.3)(react-native-safe-area-context@3.4.1)(react-native-screens@2.18.1)(typescript@4.9.5)
+    specifier: ^0.0.31
+    version: 0.0.31(@babel/core@7.24.0)(@react-native-community/masked-view@0.1.11)(react-native-gesture-handler@1.10.3)(react-native-safe-area-context@3.4.1)(react-native-screens@2.18.1)
   '@react-native-async-storage/async-storage':
     specifier: ^1.13.2
     version: 1.22.3(react-native@0.63.3)
@@ -323,7 +323,7 @@ dependencies:
     version: 3.4.1(ts-node@10.9.2)
   ts-node:
     specifier: ^10.9.1
-    version: 10.9.2(@swc/core@1.4.2)(@types/node@20.11.25)(typescript@4.9.5)
+    version: 10.9.2(@swc/core@1.4.2)(@types/node@20.11.26)(typescript@4.9.5)
   uuid:
     specifier: ^8.3.2
     version: 8.3.2
@@ -439,7 +439,7 @@ devDependencies:
     version: 7.0.4
   jest:
     specifier: ^29
-    version: 29.7.0(@types/node@20.11.25)(ts-node@10.9.2)
+    version: 29.7.0(@types/node@20.11.26)(ts-node@10.9.2)
   jest-circus:
     specifier: ^29.3.1
     version: 29.7.0
@@ -493,7 +493,7 @@ devDependencies:
     version: 4.1.1(file-loader@6.2.0)(webpack@5.90.3)
   vite:
     specifier: ^3.1.7
-    version: 3.2.8(@types/node@20.11.25)
+    version: 3.2.8(@types/node@20.11.26)
   webpack:
     specifier: ^5.74.0
     version: 5.90.3(@swc/core@1.4.2)(esbuild@0.18.20)(webpack-cli@4.10.0)
@@ -1049,7 +1049,7 @@ packages:
       '@babel/core': ^7.0.0-0
     dependencies:
       '@babel/core': 7.12.9
-      '@babel/helper-plugin-utils': 7.10.4
+      '@babel/helper-plugin-utils': 7.24.0
       '@babel/plugin-syntax-object-rest-spread': 7.8.3(@babel/core@7.12.9)
       '@babel/plugin-transform-parameters': 7.23.3(@babel/core@7.12.9)
     dev: true
@@ -2804,6 +2804,19 @@ packages:
       react-dom: 17.0.2(react@17.0.2)
     dev: false
 
+  /@floating-ui/react@0.26.9(react-dom@17.0.2)(react@17.0.2):
+    resolution: {integrity: sha512-p86wynZJVEkEq2BBjY/8p2g3biQ6TlgT4o/3KgFKyTWoJLU1GZ8wpctwRqtkEl2tseYA+kw7dBAIDFcednfI5w==, tarball: https://registry.npmjs.org/@floating-ui/react/-/react-0.26.9.tgz}
+    peerDependencies:
+      react: 17.0.2
+      react-dom: 17.0.2
+    dependencies:
+      '@floating-ui/react-dom': 2.0.8(react-dom@17.0.2)(react@17.0.2)
+      '@floating-ui/utils': 0.2.1
+      react: 17.0.2
+      react-dom: 17.0.2(react@17.0.2)
+      tabbable: 6.2.0
+    dev: false
+
   /@floating-ui/utils@0.2.1:
     resolution: {integrity: sha512-9TANp6GPoMtYzQdt54kfAyMmz1+osLlXdg2ENroU7zzrtflTLrrC/lgrIfaSe+Wu0b89GKccT7vxXA0MoAIO+Q==, tarball: https://registry.npmjs.org/@floating-ui/utils/-/utils-0.2.1.tgz}
     dev: false
@@ -3375,23 +3388,54 @@ packages:
       - utf-8-validate
     dev: false
 
-  /@neur0base/app-sdk-ui@0.0.28(@babel/core@7.24.0)(@react-native-community/masked-view@0.1.11)(react-native-gesture-handler@1.10.3)(react-native-safe-area-context@3.4.1)(react-native-screens@2.18.1)(typescript@4.9.5):
-    resolution: {integrity: sha512-C6wwd48p73gyL5lhoAs0tUkJj/S6ULEMIwmxaYNIugSYm2uE4fwvNto6w6SwzMHlZYYxpfcQ2UIBWNlSKr9mJw==, tarball: https://npm.pkg.github.com/download/@neur0base/app-sdk-ui/0.0.28/ce651c926730d08597c6d3df39e5933f0bc887d3}
+  /@neur0base/app-sdk-core@0.0.89(@babel/core@7.24.0)(@react-native-community/masked-view@0.1.11)(react-native-gesture-handler@1.10.3)(react-native-safe-area-context@3.4.1)(react-native-screens@2.18.1):
+    resolution: {integrity: sha512-w/nPsE0877cHRbGVkGrSof1BQdfv0xL9U+O7dSj6f3rw+dYXAoDSZ0fxY+G6EAzvpnXOmqOtdJ5HHQOD8p6D5Q==, tarball: https://npm.pkg.github.com/download/@neur0base/app-sdk-core/0.0.89/f0b48f91aeb61f0d3e37ffe1ccd66fe30c540090}
     dependencies:
       '@babel/preset-env': 7.19.4(@babel/core@7.24.0)
       '@babel/preset-react': 7.18.6(@babel/core@7.24.0)
       '@babel/preset-typescript': 7.18.6(@babel/core@7.24.0)
       '@echopf/sdk': 2.1.4
-      '@neur0base/app-sdk-core': 0.0.88(@babel/core@7.24.0)(@react-native-community/masked-view@0.1.11)(react-native-gesture-handler@1.10.3)(react-native-safe-area-context@3.4.1)(react-native-screens@2.18.1)
       '@react-native-async-storage/async-storage': 1.22.3(react-native@0.63.3)
       '@react-navigation/native': 5.9.8(react-native@0.63.3)(react@17.0.2)
       '@react-navigation/stack': 5.14.9(@react-native-community/masked-view@0.1.11)(@react-navigation/native@5.9.8)(react-native-gesture-handler@1.10.3)(react-native-safe-area-context@3.4.1)(react-native-screens@2.18.1)(react-native@0.63.3)(react@17.0.2)
-      '@storybook/react': 7.6.17(react-dom@17.0.2)(react@17.0.2)(typescript@4.9.5)
-      formik: 2.4.5(react@17.0.2)
+      i18next: 23.10.1
+      js-cookie: 3.0.5
       react: 17.0.2
       react-content-loader: 5.1.4(react@17.0.2)
       react-dom: 17.0.2(react@17.0.2)
       react-native: 0.63.3(@babel/core@7.24.0)(react@17.0.2)
+      react-native-vector-icons: 10.0.3
+      react-native-web: 0.18.12(react-dom@17.0.2)(react@17.0.2)
+      react-navigation: 4.4.4(react-native@0.63.3)(react@17.0.2)
+      react-router-dom: 6.4.2(react-dom@17.0.2)(react@17.0.2)
+    transitivePeerDependencies:
+      - '@babel/core'
+      - '@react-native-community/masked-view'
+      - bufferutil
+      - encoding
+      - react-native-gesture-handler
+      - react-native-safe-area-context
+      - react-native-screens
+      - supports-color
+      - utf-8-validate
+    dev: false
+
+  /@neur0base/app-sdk-ui@0.0.31(@babel/core@7.24.0)(@react-native-community/masked-view@0.1.11)(react-native-gesture-handler@1.10.3)(react-native-safe-area-context@3.4.1)(react-native-screens@2.18.1):
+    resolution: {integrity: sha512-wOcoqDe/QddqxZcynZ6fdmez+JuMDQNDkXI3c0R4h/Lo948rKM18WhxH6kYsB4+C29bl8/6+xjedCS/KrU2wlg==, tarball: https://npm.pkg.github.com/download/@neur0base/app-sdk-ui/0.0.31/f9c3dbbac648dc7c052ab531fa7407580b18bd97}
+    dependencies:
+      '@echopf/sdk': 2.1.4
+      '@neur0base/app-sdk-core': 0.0.88(@babel/core@7.24.0)(@react-native-community/masked-view@0.1.11)(react-native-gesture-handler@1.10.3)(react-native-safe-area-context@3.4.1)(react-native-screens@2.18.1)
+      '@react-native-async-storage/async-storage': 1.22.3(react-native@0.63.3)
+      '@react-navigation/native': 5.9.8(react-native@0.63.3)(react@17.0.2)
+      '@react-navigation/stack': 5.14.9(@react-native-community/masked-view@0.1.11)(@react-navigation/native@5.9.8)(react-native-gesture-handler@1.10.3)(react-native-safe-area-context@3.4.1)(react-native-screens@2.18.1)(react-native@0.63.3)(react@17.0.2)
+      dayjs: 1.11.10
+      moment: 2.30.1
+      react: 17.0.2
+      react-content-loader: 5.1.4(react@17.0.2)
+      react-datepicker: 6.3.0(react-dom@17.0.2)(react@17.0.2)
+      react-dom: 17.0.2(react@17.0.2)
+      react-native: 0.63.3(@babel/core@7.24.0)(react@17.0.2)
+      react-native-date-picker: 4.4.0(react-native@0.63.3)(react@17.0.2)
       react-native-vector-icons: 9.1.0
       react-native-web: 0.18.12(react-dom@17.0.2)(react@17.0.2)
       react-navigation: 4.4.4(react-native@0.63.3)(react@17.0.2)
@@ -3406,7 +3450,6 @@ packages:
       - react-native-safe-area-context
       - react-native-screens
       - supports-color
-      - typescript
       - utf-8-validate
     dev: false
 
@@ -4933,7 +4976,7 @@ packages:
       core-js: 3.36.0
       glob: 7.2.3
       global: 4.4.0
-      jest: 29.7.0(@types/node@20.11.25)(ts-node@10.9.2)
+      jest: 29.7.0(@types/node@20.11.26)(ts-node@10.9.2)
       jest-specific-snapshot: 4.0.0(jest@29.7.0)
       preact: 10.19.6
       preact-render-to-string: 5.2.6(preact@10.19.6)
@@ -5023,7 +5066,7 @@ packages:
       '@storybook/types': 7.6.17
       '@types/jest-specific-snapshot': 0.5.9
       glob: 10.3.10
-      jest: 29.7.0(@types/node@20.11.25)(ts-node@10.9.2)
+      jest: 29.7.0(@types/node@20.11.26)(ts-node@10.9.2)
       jest-specific-snapshot: 8.0.0(jest@29.7.0)
       preact: 10.19.6
       preact-render-to-string: 5.2.6(preact@10.19.6)
@@ -7346,8 +7389,8 @@ packages:
     dependencies:
       undici-types: 5.26.5
 
-  /@types/node@20.11.25:
-    resolution: {integrity: sha512-TBHyJxk2b7HceLVGFcpAUjsa5zIdsPWlR6XHfyGzd0SFu+/NFgQgMAl96MSDZgQDvJAvV6BKsFOrt6zIL09JDw==, tarball: https://registry.npmjs.org/@types/node/-/node-20.11.25.tgz}
+  /@types/node@20.11.26:
+    resolution: {integrity: sha512-YwOMmyhNnAWijOBQweOJnQPl068Oqd4K3OFbTc6AHJwzweUwwWG3GIFY74OKks2PJUDkQPeddOQES9mLn1CTEQ==, tarball: https://registry.npmjs.org/@types/node/-/node-20.11.26.tgz}
     dependencies:
       undici-types: 5.26.5
 
@@ -10398,6 +10441,10 @@ packages:
       isobject: 3.0.1
       static-extend: 0.1.2
 
+  /classnames@2.5.1:
+    resolution: {integrity: sha512-saHYOzhIQs6wy2sVxTM6bUDsQO4F50V9RQ22qBpEdCW+I+/Wmke2HOl6lS6dTpdxVhb88/I6+Hs+438c3lfUow==, tarball: https://registry.npmjs.org/classnames/-/classnames-2.5.1.tgz}
+    dev: false
+
   /clean-css@4.2.4:
     resolution: {integrity: sha512-EJUDT7nDVFDvaQgAo2G/PJvxmp1o/c6iXLbswsBbUFXi1Nr+AjA2cKmfbKDMjMvzEe75g3P6JkaDDAKk96A85A==, tarball: https://registry.npmjs.org/clean-css/-/clean-css-4.2.4.tgz}
     engines: {node: '>= 4.0'}
@@ -10916,7 +10963,7 @@ packages:
       sha.js: 2.4.11
     dev: true
 
-  /create-jest@29.7.0(@types/node@20.11.25)(ts-node@10.9.2):
+  /create-jest@29.7.0(@types/node@20.11.26)(ts-node@10.9.2):
     resolution: {integrity: sha512-Adz2bdH0Vq3F53KEMJOoftQFutWCukm6J24wbPWRO4k1kMY7gS7ds/uoJkNuV8wDCtWWnuwGcJwpWcih+zEW1Q==, tarball: https://registry.npmjs.org/create-jest/-/create-jest-29.7.0.tgz}
     engines: {node: ^14.15.0 || ^16.10.0 || >=18.0.0}
     hasBin: true
@@ -10925,7 +10972,7 @@ packages:
       chalk: 4.1.2
       exit: 0.1.2
       graceful-fs: 4.2.11
-      jest-config: 29.7.0(@types/node@20.11.25)(ts-node@10.9.2)
+      jest-config: 29.7.0(@types/node@20.11.26)(ts-node@10.9.2)
       jest-util: 29.7.0
       prompts: 2.4.2
     transitivePeerDependencies:
@@ -11275,6 +11322,10 @@ packages:
       whatwg-url: 11.0.0
     dev: true
 
+  /date-fns@3.4.0:
+    resolution: {integrity: sha512-Akz4R8J9MXBsOgF1QeWeCsbv6pntT5KCPjU0Q9prBxVmWJYPLhwAIsNg3b0QAdr0ttiozYLD3L/af7Ra0jqYXw==, tarball: https://registry.npmjs.org/date-fns/-/date-fns-3.4.0.tgz}
+    dev: false
+
   /dayjs@1.11.10:
     resolution: {integrity: sha512-vjAczensTgRcqDERK0SR2XMwsF/tSvnvlv6VcF2GIhg6Sx4yOIt/irsr1RDJsKiIyBzJDpCoXiWWq28MqH2cnQ==, tarball: https://registry.npmjs.org/dayjs/-/dayjs-1.11.10.tgz}
     dev: false
@@ -11608,7 +11659,7 @@ packages:
       fs-extra: 4.0.3
       funpermaproxy: 1.1.0
       ini: 1.3.8
-      jest: 29.7.0(@types/node@20.11.25)(ts-node@10.9.2)
+      jest: 29.7.0(@types/node@20.11.26)(ts-node@10.9.2)
       lodash: 4.17.21
       minimist: 1.2.8
       proper-lockfile: 3.2.0
@@ -15170,7 +15221,7 @@ packages:
       - supports-color
     dev: true
 
-  /jest-cli@29.7.0(@types/node@20.11.25)(ts-node@10.9.2):
+  /jest-cli@29.7.0(@types/node@20.11.26)(ts-node@10.9.2):
     resolution: {integrity: sha512-OVVobw2IubN/GSYsxETi+gOe7Ka59EFMR/twOU3Jb2GnKKeMGJB5SGUUrEz3SFVmJASUdZUzy83sLNNQ2gZslg==, tarball: https://registry.npmjs.org/jest-cli/-/jest-cli-29.7.0.tgz}
     engines: {node: ^14.15.0 || ^16.10.0 || >=18.0.0}
     hasBin: true
@@ -15184,10 +15235,10 @@ packages:
       '@jest/test-result': 29.7.0
       '@jest/types': 29.6.3
       chalk: 4.1.2
-      create-jest: 29.7.0(@types/node@20.11.25)(ts-node@10.9.2)
+      create-jest: 29.7.0(@types/node@20.11.26)(ts-node@10.9.2)
       exit: 0.1.2
       import-local: 3.1.0
-      jest-config: 29.7.0(@types/node@20.11.25)(ts-node@10.9.2)
+      jest-config: 29.7.0(@types/node@20.11.26)(ts-node@10.9.2)
       jest-util: 29.7.0
       jest-validate: 29.7.0
       yargs: 17.7.2
@@ -15233,13 +15284,13 @@ packages:
       pretty-format: 29.7.0
       slash: 3.0.0
       strip-json-comments: 3.1.1
-      ts-node: 10.9.2(@swc/core@1.4.2)(@types/node@20.11.25)(typescript@4.9.5)
+      ts-node: 10.9.2(@swc/core@1.4.2)(@types/node@20.11.26)(typescript@4.9.5)
     transitivePeerDependencies:
       - babel-plugin-macros
       - supports-color
     dev: true
 
-  /jest-config@29.7.0(@types/node@20.11.25)(ts-node@10.9.2):
+  /jest-config@29.7.0(@types/node@20.11.26)(ts-node@10.9.2):
     resolution: {integrity: sha512-uXbpfeQ7R6TZBqI3/TxCU4q4ttk3u0PJeC+E0zbfSoSjq6bJ7buBPxzQPL0ifrkY4DNu4JUdk0ImlBUYi840eQ==, tarball: https://registry.npmjs.org/jest-config/-/jest-config-29.7.0.tgz}
     engines: {node: ^14.15.0 || ^16.10.0 || >=18.0.0}
     peerDependencies:
@@ -15254,7 +15305,7 @@ packages:
       '@babel/core': 7.24.0
       '@jest/test-sequencer': 29.7.0
       '@jest/types': 29.6.3
-      '@types/node': 20.11.25
+      '@types/node': 20.11.26
       babel-jest: 29.7.0(@babel/core@7.24.0)
       chalk: 4.1.2
       ci-info: 3.9.0
@@ -15274,7 +15325,7 @@ packages:
       pretty-format: 29.7.0
       slash: 3.0.0
       strip-json-comments: 3.1.1
-      ts-node: 10.9.2(@swc/core@1.4.2)(@types/node@20.11.25)(typescript@4.9.5)
+      ts-node: 10.9.2(@swc/core@1.4.2)(@types/node@20.11.26)(typescript@4.9.5)
     transitivePeerDependencies:
       - babel-plugin-macros
       - supports-color
@@ -15485,7 +15536,7 @@ packages:
       chalk: 1.1.3
       get-stdin: 5.0.1
       glur: 1.1.2
-      jest: 29.7.0(@types/node@20.11.25)(ts-node@10.9.2)
+      jest: 29.7.0(@types/node@20.11.26)(ts-node@10.9.2)
       lodash: 4.17.21
       mkdirp: 0.5.6
       pixelmatch: 5.3.0
@@ -15506,7 +15557,7 @@ packages:
       chalk: 4.1.2
       get-stdin: 5.0.1
       glur: 1.1.2
-      jest: 29.7.0(@types/node@20.11.25)(ts-node@10.9.2)
+      jest: 29.7.0(@types/node@20.11.26)(ts-node@10.9.2)
       lodash: 4.17.21
       pixelmatch: 5.3.0
       pngjs: 3.4.0
@@ -15846,7 +15897,7 @@ packages:
     peerDependencies:
       jest: '>= 26.0.0'
     dependencies:
-      jest: 29.7.0(@types/node@20.11.25)(ts-node@10.9.2)
+      jest: 29.7.0(@types/node@20.11.26)(ts-node@10.9.2)
       jest-snapshot: 26.6.2
     transitivePeerDependencies:
       - supports-color
@@ -15857,7 +15908,7 @@ packages:
     peerDependencies:
       jest: '>= 29.0.0'
     dependencies:
-      jest: 29.7.0(@types/node@20.11.25)(ts-node@10.9.2)
+      jest: 29.7.0(@types/node@20.11.26)(ts-node@10.9.2)
       jest-snapshot: 29.7.0
     transitivePeerDependencies:
       - supports-color
@@ -15978,7 +16029,7 @@ packages:
       merge-stream: 2.0.0
       supports-color: 8.1.1
 
-  /jest@29.7.0(@types/node@20.11.25)(ts-node@10.9.2):
+  /jest@29.7.0(@types/node@20.11.26)(ts-node@10.9.2):
     resolution: {integrity: sha512-NIy3oAFp9shda19hy4HK0HRTWKtPJmGdnvywu01nOqNC2vZg+Z+fvJDxpMQA88eb2I9EcafcdjYgsDthnYTvGw==, tarball: https://registry.npmjs.org/jest/-/jest-29.7.0.tgz}
     engines: {node: ^14.15.0 || ^16.10.0 || >=18.0.0}
     hasBin: true
@@ -15991,7 +16042,7 @@ packages:
       '@jest/core': 29.7.0(ts-node@10.9.2)
       '@jest/types': 29.6.3
       import-local: 3.1.0
-      jest-cli: 29.7.0(@types/node@20.11.25)(ts-node@10.9.2)
+      jest-cli: 29.7.0(@types/node@20.11.26)(ts-node@10.9.2)
     transitivePeerDependencies:
       - '@types/node'
       - babel-plugin-macros
@@ -18540,7 +18591,7 @@ packages:
     dependencies:
       lilconfig: 3.1.1
       postcss: 8.4.35
-      ts-node: 10.9.2(@swc/core@1.4.2)(@types/node@20.11.25)(typescript@4.9.5)
+      ts-node: 10.9.2(@swc/core@1.4.2)(@types/node@20.11.26)(typescript@4.9.5)
       yaml: 2.4.0
     dev: false
 
@@ -19455,6 +19506,21 @@ packages:
       react: 17.0.2
     dev: false
 
+  /react-datepicker@6.3.0(react-dom@17.0.2)(react@17.0.2):
+    resolution: {integrity: sha512-1kDbFRDxfV7IMO/m6DgCHk+mzSbFMtJC1YTwp34rcBEMd6lVTROH7IUcCgl08rwTnjqV0iG3IzGlspB8wgjaBA==, tarball: https://registry.npmjs.org/react-datepicker/-/react-datepicker-6.3.0.tgz}
+    peerDependencies:
+      react: 17.0.2
+      react-dom: 17.0.2
+    dependencies:
+      '@floating-ui/react': 0.26.9(react-dom@17.0.2)(react@17.0.2)
+      classnames: 2.5.1
+      date-fns: 3.4.0
+      prop-types: 15.8.1
+      react: 17.0.2
+      react-dom: 17.0.2(react@17.0.2)
+      react-onclickoutside: 6.13.0(react-dom@17.0.2)(react@17.0.2)
+    dev: false
+
   /react-devtools-core@4.28.5:
     resolution: {integrity: sha512-cq/o30z9W2Wb4rzBefjv5fBalHU0rJGZCHAkf/RHSBWSSYwh8PlQTqqOJmgIIbBtpj27T6FIPXeomIjZtCNVqA==, tarball: https://registry.npmjs.org/react-devtools-core/-/react-devtools-core-4.28.5.tgz}
     dependencies:
@@ -19602,6 +19668,16 @@ packages:
 
   /react-native-date-picker@3.4.3:
     resolution: {integrity: sha512-YAp/U8KafgXI57ZiqaZlgWMLPcY686PQ2ejo5gTEb1EcnjSKn3Zt8Gg7+oy55cLl98gZzmz+rJlBeVIDlq4n+A==, tarball: https://registry.npmjs.org/react-native-date-picker/-/react-native-date-picker-3.4.3.tgz}
+    dev: false
+
+  /react-native-date-picker@4.4.0(react-native@0.63.3)(react@17.0.2):
+    resolution: {integrity: sha512-Axx3byihwwhKRLRVjPAr/UaEysapkRcKmjjM8/05UaVm4Q0xDn2RFUcRdy1QAahhRcjLjlVYhepxvU5bdgy7ZQ==, tarball: https://registry.npmjs.org/react-native-date-picker/-/react-native-date-picker-4.4.0.tgz}
+    peerDependencies:
+      react: 17.0.2
+      react-native: 0.63.3
+    dependencies:
+      react: 17.0.2
+      react-native: 0.63.3(@babel/core@7.24.0)(react@17.0.2)
     dev: false
 
   /react-native-dialog@6.2.0:
@@ -20117,6 +20193,16 @@ packages:
       '@react-navigation/native': 3.8.4(react-native@0.63.3)(react@17.0.2)
       react: 17.0.2
       react-native: 0.63.3(@babel/core@7.24.0)(react@17.0.2)
+    dev: false
+
+  /react-onclickoutside@6.13.0(react-dom@17.0.2)(react@17.0.2):
+    resolution: {integrity: sha512-ty8So6tcUpIb+ZE+1HAhbLROvAIJYyJe/1vRrrcmW+jLsaM+/powDRqxzo6hSh9CuRZGSL1Q8mvcF5WRD93a0A==, tarball: https://registry.npmjs.org/react-onclickoutside/-/react-onclickoutside-6.13.0.tgz}
+    peerDependencies:
+      react: 17.0.2
+      react-dom: 17.0.2
+    dependencies:
+      react: 17.0.2
+      react-dom: 17.0.2(react@17.0.2)
     dev: false
 
   /react-popper-tooltip@3.1.1(react-dom@17.0.2)(react@17.0.2):
@@ -22026,6 +22112,10 @@ packages:
   /synchronous-promise@2.0.17:
     resolution: {integrity: sha512-AsS729u2RHUfEra9xJrE39peJcc2stq2+poBXX8bcM08Y6g9j/i/PUzwNQqkaJde7Ntg1TO7bSREbR5sdosQ+g==, tarball: https://registry.npmjs.org/synchronous-promise/-/synchronous-promise-2.0.17.tgz}
 
+  /tabbable@6.2.0:
+    resolution: {integrity: sha512-Cat63mxsVJlzYvN51JmVXIgNoUokrIaT2zLclCXjRd8boZ0004U4KCs/sToJ75C6sdlByWxpYnb5Boif1VSFew==, tarball: https://registry.npmjs.org/tabbable/-/tabbable-6.2.0.tgz}
+    dev: false
+
   /tail@2.2.6:
     resolution: {integrity: sha512-IQ6G4wK/t8VBauYiGPLx+d3fA5XjSVagjWV5SIYzvEvglbQjwEcukeYI68JOPpdydjxhZ9sIgzRlSmwSpphHyw==, tarball: https://registry.npmjs.org/tail/-/tail-2.2.6.tgz}
     engines: {node: '>= 6.0.0'}
@@ -22508,7 +22598,7 @@ packages:
       webpack: 5.90.3(@swc/core@1.4.2)(esbuild@0.18.20)(webpack-cli@4.10.0)
     dev: true
 
-  /ts-node@10.9.2(@swc/core@1.4.2)(@types/node@20.11.25)(typescript@4.9.5):
+  /ts-node@10.9.2(@swc/core@1.4.2)(@types/node@20.11.26)(typescript@4.9.5):
     resolution: {integrity: sha512-f0FFpIdcHgn8zcPSbf1dRevwt047YMnaiJM3u2w2RewrB+fob/zePZcrOyQoLMMO7aBIddLcQIEK5dYjkLnGrQ==, tarball: https://registry.npmjs.org/ts-node/-/ts-node-10.9.2.tgz}
     hasBin: true
     peerDependencies:
@@ -22528,7 +22618,7 @@ packages:
       '@tsconfig/node12': 1.0.11
       '@tsconfig/node14': 1.0.3
       '@tsconfig/node16': 1.0.4
-      '@types/node': 20.11.25
+      '@types/node': 20.11.26
       acorn: 8.11.3
       acorn-walk: 8.3.2
       arg: 4.1.3
@@ -23177,7 +23267,7 @@ packages:
       vfile-message: 2.0.4
     dev: true
 
-  /vite@3.2.8(@types/node@20.11.25):
+  /vite@3.2.8(@types/node@20.11.26):
     resolution: {integrity: sha512-EtQU16PLIJpAZol2cTLttNP1mX6L0SyI0pgQB1VOoWeQnMSvtiwovV3D6NcjN8CZQWWyESD2v5NGnpz5RvgOZA==, tarball: https://registry.npmjs.org/vite/-/vite-3.2.8.tgz}
     engines: {node: ^14.18.0 || >=16.0.0}
     hasBin: true
@@ -23202,7 +23292,7 @@ packages:
       terser:
         optional: true
     dependencies:
-      '@types/node': 20.11.25
+      '@types/node': 20.11.26
       esbuild: 0.15.18
       postcss: 8.4.35
       resolve: 1.22.8
