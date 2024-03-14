@@ -1,0 +1,15 @@
+テーマカラー
+このアプリケーションのテーマカラーは、青色を基調とした落ち着いた配色で統一感があり、視認性と使いやすさが向上します。背景色は青みがかった色を使用し、警告色はオレンジ色を採用することで、青色の背景と対比がつき目立つようになっています。
+
+- **カラー定義**:
+  - **プライマリーカラー**: #0d6efd (メインのアクセントカラーで、ナビゲーションバーやボタンなどに使用されます。)
+  - **セカンダリーカラー**: #6c757d (補助的な強調表示に使用される色です。)
+  - **背景色**: #e7f1ff (アプリケーションの背景色で、青みがかった落ち着いた色合いです。)
+  - **テキストカラー**: #212529 (テキストの基本色です。)
+  - **リンクカラー**: #0d6efd (リンクテキストに使用される色です。)
+  - **入力フィールドカラー**: #ced4da (入力フィールドの境界線や区切りに使用される色です。)
+  - **無効化カラー**: #6c757d (無効化された要素に使用される色です。)
+  - **警告カラー**: #fd7e14 (警告メッセージや注意を促す情報に使用される色で、青色の背景と対比がつき目立つオレンジ色です。)
+  - **エラーカラー**: #dc3545 (エラーメッセージや問題を示す際に使用される色で、青色ベースの配色から外れた色合いです。)
+  - **成功カラー**: #198754 (成功メッセージや肯定的なアクションを示す際に使用される色で、青色ベースの配色から外れた色合いです。)
+<div style="backgroundColor: #e7f1ff; padding: 10px;"><p style="color: #0d6efd; font-weight: bold; font-size: 150%;">PrimaryColor</p><p style="color: #6c757d; font-weight: bold;">SecondaryColor</p><p style="color: #212529;">TextColor TextColor TextColor TextColor TextColor</p><p style="color: #0d6efd; text-decoration: underline;">LinkColor</p><p style="border: solid 2px #ced4da; padding: 4px; margin: 4px;">InputColor</p><p style="color: #6c757d;">DisabledColor</p><p style="color: #fd7e14;">WarningColor</p><p style="color: #dc3545;">ErrorColor</p><p style="color: #198754;">SuccessColor</p></div>
