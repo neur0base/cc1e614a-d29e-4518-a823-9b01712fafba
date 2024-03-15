@@ -18,12 +18,15 @@ dependencies:
   '@gorhom/bottom-sheet':
     specifier: ^4
     version: 4.6.1(@types/react-native@0.63.75)(@types/react@17.0.76)(react-native-gesture-handler@1.10.3)(react-native-reanimated@2.2.4)(react-native@0.63.3)(react@17.0.2)
+  '@headlessui/react':
+    specifier: ^1.7.18
+    version: 1.7.18(react-dom@17.0.2)(react@17.0.2)
   '@neur0base/app-sdk-core':
-    specifier: ^0.0.89
-    version: 0.0.89(@babel/core@7.24.0)(@react-native-community/masked-view@0.1.11)(react-native-gesture-handler@1.10.3)(react-native-safe-area-context@3.4.1)(react-native-screens@2.18.1)
+    specifier: ^0.0.92
+    version: 0.0.92(@babel/core@7.24.0)(@react-native-community/masked-view@0.1.11)(react-native-gesture-handler@1.10.3)(react-native-safe-area-context@3.4.1)(react-native-screens@2.18.1)
   '@neur0base/app-sdk-ui':
-    specifier: ^0.0.33
-    version: 0.0.33(@babel/core@7.24.0)(@react-native-community/masked-view@0.1.11)(react-native-gesture-handler@1.10.3)(react-native-safe-area-context@3.4.1)(react-native-screens@2.18.1)
+    specifier: ^0.0.39
+    version: 0.0.39(@babel/core@7.24.0)(@react-native-community/masked-view@0.1.11)(react-native-gesture-handler@1.10.3)(react-native-safe-area-context@3.4.1)(react-native-screens@2.18.1)
   '@react-native-async-storage/async-storage':
     specifier: ^1.13.2
     version: 1.22.3(react-native@0.63.3)
@@ -323,7 +326,7 @@ dependencies:
     version: 3.4.1(ts-node@10.9.2)
   ts-node:
     specifier: ^10.9.1
-    version: 10.9.2(@swc/core@1.4.2)(@types/node@20.11.26)(typescript@4.9.5)
+    version: 10.9.2(@swc/core@1.4.2)(@types/node@20.11.27)(typescript@4.9.5)
   uuid:
     specifier: ^8.3.2
     version: 8.3.2
@@ -439,7 +442,7 @@ devDependencies:
     version: 7.0.4
   jest:
     specifier: ^29
-    version: 29.7.0(@types/node@20.11.26)(ts-node@10.9.2)
+    version: 29.7.0(@types/node@20.11.27)(ts-node@10.9.2)
   jest-circus:
     specifier: ^29.3.1
     version: 29.7.0
@@ -493,7 +496,7 @@ devDependencies:
     version: 4.1.1(file-loader@6.2.0)(webpack@5.90.3)
   vite:
     specifier: ^3.1.7
-    version: 3.2.8(@types/node@20.11.26)
+    version: 3.2.8(@types/node@20.11.27)
   webpack:
     specifier: ^5.74.0
     version: 5.90.3(@swc/core@1.4.2)(esbuild@0.18.20)(webpack-cli@4.10.0)
@@ -1049,7 +1052,7 @@ packages:
       '@babel/core': ^7.0.0-0
     dependencies:
       '@babel/core': 7.12.9
-      '@babel/helper-plugin-utils': 7.10.4
+      '@babel/helper-plugin-utils': 7.24.0
       '@babel/plugin-syntax-object-rest-spread': 7.8.3(@babel/core@7.12.9)
       '@babel/plugin-transform-parameters': 7.23.3(@babel/core@7.12.9)
     dev: true
@@ -2901,6 +2904,19 @@ packages:
     dependencies:
       '@hapi/hoek': 9.3.0
 
+  /@headlessui/react@1.7.18(react-dom@17.0.2)(react@17.0.2):
+    resolution: {integrity: sha512-4i5DOrzwN4qSgNsL4Si61VMkUcWbcSKueUV7sFhpHzQcSShdlHENE5+QBntMSRvHt8NyoFO2AGG8si9lq+w4zQ==, tarball: https://registry.npmjs.org/@headlessui/react/-/react-1.7.18.tgz}
+    engines: {node: '>=10'}
+    peerDependencies:
+      react: 17.0.2
+      react-dom: 17.0.2
+    dependencies:
+      '@tanstack/react-virtual': 3.1.3(react-dom@17.0.2)(react@17.0.2)
+      client-only: 0.0.1
+      react: 17.0.2
+      react-dom: 17.0.2(react@17.0.2)
+    dev: false
+
   /@humanwhocodes/config-array@0.11.14:
     resolution: {integrity: sha512-3T8LkOmg45BV5FICb15QQMsyUSWrQ8AygVfC7ZG32zOalnqrilm018ZVCw0eapXux8FtA33q8PSRSstjee3jSg==, tarball: https://registry.npmjs.org/@humanwhocodes/config-array/-/config-array-0.11.14.tgz}
     engines: {node: '>=10.10.0'}
@@ -3356,8 +3372,8 @@ packages:
       tar-fs: 2.1.1
     dev: false
 
-  /@neur0base/app-sdk-core@0.0.88(@babel/core@7.24.0)(@react-native-community/masked-view@0.1.11)(react-native-gesture-handler@1.10.3)(react-native-safe-area-context@3.4.1)(react-native-screens@2.18.1):
-    resolution: {integrity: sha512-wZ3AAQDeLBF7/Q2CemNrOcoe9w9f385zGTyZEC8+fhpARuS51N8hv+WhG4gNHn4kJt+wUhaDhiKlAwfLdRTN0w==, tarball: https://npm.pkg.github.com/download/@neur0base/app-sdk-core/0.0.88/6998ee96db4aceac597da8008c595ce711b7ec89}
+  /@neur0base/app-sdk-core@0.0.92(@babel/core@7.24.0)(@react-native-community/masked-view@0.1.11)(react-native-gesture-handler@1.10.3)(react-native-safe-area-context@3.4.1)(react-native-screens@2.18.1):
+    resolution: {integrity: sha512-Xt77kKdyFksuDzQdCy1APf2gyTfp0dA/sTKR6syVAiYFd+p8PSo8gPjBSB2/vb6yjZgC3WbmdiXWwLdyrVWAcA==, tarball: https://npm.pkg.github.com/download/@neur0base/app-sdk-core/0.0.92/c12416aa2637bf246b70c1ec46135d44b343179d}
     dependencies:
       '@babel/preset-env': 7.19.4(@babel/core@7.24.0)
       '@babel/preset-react': 7.18.6(@babel/core@7.24.0)
@@ -3388,43 +3404,11 @@ packages:
       - utf-8-validate
     dev: false
 
-  /@neur0base/app-sdk-core@0.0.89(@babel/core@7.24.0)(@react-native-community/masked-view@0.1.11)(react-native-gesture-handler@1.10.3)(react-native-safe-area-context@3.4.1)(react-native-screens@2.18.1):
-    resolution: {integrity: sha512-w/nPsE0877cHRbGVkGrSof1BQdfv0xL9U+O7dSj6f3rw+dYXAoDSZ0fxY+G6EAzvpnXOmqOtdJ5HHQOD8p6D5Q==, tarball: https://npm.pkg.github.com/download/@neur0base/app-sdk-core/0.0.89/f0b48f91aeb61f0d3e37ffe1ccd66fe30c540090}
-    dependencies:
-      '@babel/preset-env': 7.19.4(@babel/core@7.24.0)
-      '@babel/preset-react': 7.18.6(@babel/core@7.24.0)
-      '@babel/preset-typescript': 7.18.6(@babel/core@7.24.0)
-      '@echopf/sdk': 2.1.4
-      '@react-native-async-storage/async-storage': 1.22.3(react-native@0.63.3)
-      '@react-navigation/native': 5.9.8(react-native@0.63.3)(react@17.0.2)
-      '@react-navigation/stack': 5.14.9(@react-native-community/masked-view@0.1.11)(@react-navigation/native@5.9.8)(react-native-gesture-handler@1.10.3)(react-native-safe-area-context@3.4.1)(react-native-screens@2.18.1)(react-native@0.63.3)(react@17.0.2)
-      i18next: 23.10.1
-      js-cookie: 3.0.5
-      react: 17.0.2
-      react-content-loader: 5.1.4(react@17.0.2)
-      react-dom: 17.0.2(react@17.0.2)
-      react-native: 0.63.3(@babel/core@7.24.0)(react@17.0.2)
-      react-native-vector-icons: 10.0.3
-      react-native-web: 0.18.12(react-dom@17.0.2)(react@17.0.2)
-      react-navigation: 4.4.4(react-native@0.63.3)(react@17.0.2)
-      react-router-dom: 6.4.2(react-dom@17.0.2)(react@17.0.2)
-    transitivePeerDependencies:
-      - '@babel/core'
-      - '@react-native-community/masked-view'
-      - bufferutil
-      - encoding
-      - react-native-gesture-handler
-      - react-native-safe-area-context
-      - react-native-screens
-      - supports-color
-      - utf-8-validate
-    dev: false
-
-  /@neur0base/app-sdk-ui@0.0.33(@babel/core@7.24.0)(@react-native-community/masked-view@0.1.11)(react-native-gesture-handler@1.10.3)(react-native-safe-area-context@3.4.1)(react-native-screens@2.18.1):
-    resolution: {integrity: sha512-Ht1o/G/BFOM9qMG79XBy8dnsL0awuHF2smxSHitc33ahMhqtpo8uO/kFabmSySzorzM//qNc/1Em/iZW7wTT6A==, tarball: https://npm.pkg.github.com/download/@neur0base/app-sdk-ui/0.0.33/d0085d021fb2684bf9eade2ef3d4cb5cb1b66628}
+  /@neur0base/app-sdk-ui@0.0.39(@babel/core@7.24.0)(@react-native-community/masked-view@0.1.11)(react-native-gesture-handler@1.10.3)(react-native-safe-area-context@3.4.1)(react-native-screens@2.18.1):
+    resolution: {integrity: sha512-aaFlkuQr8H2RHrXXd7fRDP2OswmlkgCnC+qtSwHNUFPYXYwfiNEvpqwtisUl2q++7v7yui8BXOeYxME1dYuJxA==, tarball: https://npm.pkg.github.com/download/@neur0base/app-sdk-ui/0.0.39/e946b555e36ee14fcbe5df98911f9119ed2cc47d}
     dependencies:
       '@echopf/sdk': 2.1.4
-      '@neur0base/app-sdk-core': 0.0.88(@babel/core@7.24.0)(@react-native-community/masked-view@0.1.11)(react-native-gesture-handler@1.10.3)(react-native-safe-area-context@3.4.1)(react-native-screens@2.18.1)
+      '@neur0base/app-sdk-core': 0.0.92(@babel/core@7.24.0)(@react-native-community/masked-view@0.1.11)(react-native-gesture-handler@1.10.3)(react-native-safe-area-context@3.4.1)(react-native-screens@2.18.1)
       '@react-native-async-storage/async-storage': 1.22.3(react-native@0.63.3)
       '@react-navigation/native': 5.9.8(react-native@0.63.3)(react@17.0.2)
       '@react-navigation/stack': 5.14.9(@react-native-community/masked-view@0.1.11)(@react-navigation/native@5.9.8)(react-native-gesture-handler@1.10.3)(react-native-safe-area-context@3.4.1)(react-native-screens@2.18.1)(react-native@0.63.3)(react@17.0.2)
@@ -4976,7 +4960,7 @@ packages:
       core-js: 3.36.0
       glob: 7.2.3
       global: 4.4.0
-      jest: 29.7.0(@types/node@20.11.26)(ts-node@10.9.2)
+      jest: 29.7.0(@types/node@20.11.27)(ts-node@10.9.2)
       jest-specific-snapshot: 4.0.0(jest@29.7.0)
       preact: 10.19.6
       preact-render-to-string: 5.2.6(preact@10.19.6)
@@ -5066,7 +5050,7 @@ packages:
       '@storybook/types': 7.6.17
       '@types/jest-specific-snapshot': 0.5.9
       glob: 10.3.10
-      jest: 29.7.0(@types/node@20.11.26)(ts-node@10.9.2)
+      jest: 29.7.0(@types/node@20.11.27)(ts-node@10.9.2)
       jest-specific-snapshot: 8.0.0(jest@29.7.0)
       preact: 10.19.6
       preact-render-to-string: 5.2.6(preact@10.19.6)
@@ -6968,6 +6952,21 @@ packages:
   /@swc/types@0.1.5:
     resolution: {integrity: sha512-myfUej5naTBWnqOCc/MdVOLVjXUXtIA+NpDrDBKJtLLg2shUjBu3cZmB/85RyitKc55+lUUyl7oRfLOvkr2hsw==, tarball: https://registry.npmjs.org/@swc/types/-/types-0.1.5.tgz}
 
+  /@tanstack/react-virtual@3.1.3(react-dom@17.0.2)(react@17.0.2):
+    resolution: {integrity: sha512-YCzcbF/Ws/uZ0q3Z6fagH+JVhx4JLvbSflgldMgLsuvB8aXjZLLb3HvrEVxY480F9wFlBiXlvQxOyXb5ENPrNA==, tarball: https://registry.npmjs.org/@tanstack/react-virtual/-/react-virtual-3.1.3.tgz}
+    peerDependencies:
+      react: 17.0.2
+      react-dom: 17.0.2
+    dependencies:
+      '@tanstack/virtual-core': 3.1.3
+      react: 17.0.2
+      react-dom: 17.0.2(react@17.0.2)
+    dev: false
+
+  /@tanstack/virtual-core@3.1.3:
+    resolution: {integrity: sha512-Y5B4EYyv1j9V8LzeAoOVeTg0LI7Fo5InYKgAjkY1Pu9GjtUwX/EKxNcU7ng3sKr99WEf+bPTcktAeybyMOYo+g==, tarball: https://registry.npmjs.org/@tanstack/virtual-core/-/virtual-core-3.1.3.tgz}
+    dev: false
+
   /@testing-library/dom@9.3.4:
     resolution: {integrity: sha512-FlS4ZWlp97iiNWig0Muq8p+3rVDjRiYE+YKGbAqXOu9nwJFFOdL00kFpz42M+4huzYi86vAK1sOOfyOG45muIQ==, tarball: https://registry.npmjs.org/@testing-library/dom/-/dom-9.3.4.tgz}
     engines: {node: '>=14'}
@@ -7389,8 +7388,8 @@ packages:
     dependencies:
       undici-types: 5.26.5
 
-  /@types/node@20.11.26:
-    resolution: {integrity: sha512-YwOMmyhNnAWijOBQweOJnQPl068Oqd4K3OFbTc6AHJwzweUwwWG3GIFY74OKks2PJUDkQPeddOQES9mLn1CTEQ==, tarball: https://registry.npmjs.org/@types/node/-/node-20.11.26.tgz}
+  /@types/node@20.11.27:
+    resolution: {integrity: sha512-qyUZfMnCg1KEz57r7pzFtSGt49f6RPkPBis3Vo4PbS7roQEDn22hiHzl/Lo1q4i4hDEgBJmBF/NTNg2XR0HbFg==, tarball: https://registry.npmjs.org/@types/node/-/node-20.11.27.tgz}
     dependencies:
       undici-types: 5.26.5
 
@@ -10513,6 +10512,10 @@ packages:
     resolution: {integrity: sha512-GRMWDxpOB6Dgk2E5Uo+3eEBvtOOlimMmpbFiKuLFnQzYDavtLFY3K5ona41jgN/WdRZtG7utuVSVTL4HbZHGkw==, tarball: https://registry.npmjs.org/cli-width/-/cli-width-2.2.1.tgz}
     dev: false
 
+  /client-only@0.0.1:
+    resolution: {integrity: sha512-IV3Ou0jSMzZrd3pZ48nLkT9DA7Ag1pnPzaiQhpW7c3RbcqqzvzzVu+L8gfqMp/8IM2MQtSiqaCxrrcfu8I8rMA==, tarball: https://registry.npmjs.org/client-only/-/client-only-0.0.1.tgz}
+    dev: false
+
   /cliui@5.0.0:
     resolution: {integrity: sha512-PYeGSEmmHM6zvoef2w8TPzlrnNpXIjTipYK780YswmIP9vjxmd6Y2a3CB2Ks6/AU8NHjZugXvo8w3oWM2qnwXA==, tarball: https://registry.npmjs.org/cliui/-/cliui-5.0.0.tgz}
     dependencies:
@@ -10963,7 +10966,7 @@ packages:
       sha.js: 2.4.11
     dev: true
 
-  /create-jest@29.7.0(@types/node@20.11.26)(ts-node@10.9.2):
+  /create-jest@29.7.0(@types/node@20.11.27)(ts-node@10.9.2):
     resolution: {integrity: sha512-Adz2bdH0Vq3F53KEMJOoftQFutWCukm6J24wbPWRO4k1kMY7gS7ds/uoJkNuV8wDCtWWnuwGcJwpWcih+zEW1Q==, tarball: https://registry.npmjs.org/create-jest/-/create-jest-29.7.0.tgz}
     engines: {node: ^14.15.0 || ^16.10.0 || >=18.0.0}
     hasBin: true
@@ -10972,7 +10975,7 @@ packages:
       chalk: 4.1.2
       exit: 0.1.2
       graceful-fs: 4.2.11
-      jest-config: 29.7.0(@types/node@20.11.26)(ts-node@10.9.2)
+      jest-config: 29.7.0(@types/node@20.11.27)(ts-node@10.9.2)
       jest-util: 29.7.0
       prompts: 2.4.2
     transitivePeerDependencies:
@@ -11322,8 +11325,8 @@ packages:
       whatwg-url: 11.0.0
     dev: true
 
-  /date-fns@3.4.0:
-    resolution: {integrity: sha512-Akz4R8J9MXBsOgF1QeWeCsbv6pntT5KCPjU0Q9prBxVmWJYPLhwAIsNg3b0QAdr0ttiozYLD3L/af7Ra0jqYXw==, tarball: https://registry.npmjs.org/date-fns/-/date-fns-3.4.0.tgz}
+  /date-fns@3.5.0:
+    resolution: {integrity: sha512-a+DwyXn7NOfdJireCzAA0B9p7jIXEu/Q9JKCyMYvH6+0vPUNbQceA0neXrdfJ/xzl3mhOh5vibQQ3936Tssm6A==, tarball: https://registry.npmjs.org/date-fns/-/date-fns-3.5.0.tgz}
     dev: false
 
   /dayjs@1.11.10:
@@ -11659,7 +11662,7 @@ packages:
       fs-extra: 4.0.3
       funpermaproxy: 1.1.0
       ini: 1.3.8
-      jest: 29.7.0(@types/node@20.11.26)(ts-node@10.9.2)
+      jest: 29.7.0(@types/node@20.11.27)(ts-node@10.9.2)
       lodash: 4.17.21
       minimist: 1.2.8
       proper-lockfile: 3.2.0
@@ -15221,7 +15224,7 @@ packages:
       - supports-color
     dev: true
 
-  /jest-cli@29.7.0(@types/node@20.11.26)(ts-node@10.9.2):
+  /jest-cli@29.7.0(@types/node@20.11.27)(ts-node@10.9.2):
     resolution: {integrity: sha512-OVVobw2IubN/GSYsxETi+gOe7Ka59EFMR/twOU3Jb2GnKKeMGJB5SGUUrEz3SFVmJASUdZUzy83sLNNQ2gZslg==, tarball: https://registry.npmjs.org/jest-cli/-/jest-cli-29.7.0.tgz}
     engines: {node: ^14.15.0 || ^16.10.0 || >=18.0.0}
     hasBin: true
@@ -15235,10 +15238,10 @@ packages:
       '@jest/test-result': 29.7.0
       '@jest/types': 29.6.3
       chalk: 4.1.2
-      create-jest: 29.7.0(@types/node@20.11.26)(ts-node@10.9.2)
+      create-jest: 29.7.0(@types/node@20.11.27)(ts-node@10.9.2)
       exit: 0.1.2
       import-local: 3.1.0
-      jest-config: 29.7.0(@types/node@20.11.26)(ts-node@10.9.2)
+      jest-config: 29.7.0(@types/node@20.11.27)(ts-node@10.9.2)
       jest-util: 29.7.0
       jest-validate: 29.7.0
       yargs: 17.7.2
@@ -15284,13 +15287,13 @@ packages:
       pretty-format: 29.7.0
       slash: 3.0.0
       strip-json-comments: 3.1.1
-      ts-node: 10.9.2(@swc/core@1.4.2)(@types/node@20.11.26)(typescript@4.9.5)
+      ts-node: 10.9.2(@swc/core@1.4.2)(@types/node@20.11.27)(typescript@4.9.5)
     transitivePeerDependencies:
       - babel-plugin-macros
       - supports-color
     dev: true
 
-  /jest-config@29.7.0(@types/node@20.11.26)(ts-node@10.9.2):
+  /jest-config@29.7.0(@types/node@20.11.27)(ts-node@10.9.2):
     resolution: {integrity: sha512-uXbpfeQ7R6TZBqI3/TxCU4q4ttk3u0PJeC+E0zbfSoSjq6bJ7buBPxzQPL0ifrkY4DNu4JUdk0ImlBUYi840eQ==, tarball: https://registry.npmjs.org/jest-config/-/jest-config-29.7.0.tgz}
     engines: {node: ^14.15.0 || ^16.10.0 || >=18.0.0}
     peerDependencies:
@@ -15305,7 +15308,7 @@ packages:
       '@babel/core': 7.24.0
       '@jest/test-sequencer': 29.7.0
       '@jest/types': 29.6.3
-      '@types/node': 20.11.26
+      '@types/node': 20.11.27
       babel-jest: 29.7.0(@babel/core@7.24.0)
       chalk: 4.1.2
       ci-info: 3.9.0
@@ -15325,7 +15328,7 @@ packages:
       pretty-format: 29.7.0
       slash: 3.0.0
       strip-json-comments: 3.1.1
-      ts-node: 10.9.2(@swc/core@1.4.2)(@types/node@20.11.26)(typescript@4.9.5)
+      ts-node: 10.9.2(@swc/core@1.4.2)(@types/node@20.11.27)(typescript@4.9.5)
     transitivePeerDependencies:
       - babel-plugin-macros
       - supports-color
@@ -15536,7 +15539,7 @@ packages:
       chalk: 1.1.3
       get-stdin: 5.0.1
       glur: 1.1.2
-      jest: 29.7.0(@types/node@20.11.26)(ts-node@10.9.2)
+      jest: 29.7.0(@types/node@20.11.27)(ts-node@10.9.2)
       lodash: 4.17.21
       mkdirp: 0.5.6
       pixelmatch: 5.3.0
@@ -15557,7 +15560,7 @@ packages:
       chalk: 4.1.2
       get-stdin: 5.0.1
       glur: 1.1.2
-      jest: 29.7.0(@types/node@20.11.26)(ts-node@10.9.2)
+      jest: 29.7.0(@types/node@20.11.27)(ts-node@10.9.2)
       lodash: 4.17.21
       pixelmatch: 5.3.0
       pngjs: 3.4.0
@@ -15897,7 +15900,7 @@ packages:
     peerDependencies:
       jest: '>= 26.0.0'
     dependencies:
-      jest: 29.7.0(@types/node@20.11.26)(ts-node@10.9.2)
+      jest: 29.7.0(@types/node@20.11.27)(ts-node@10.9.2)
       jest-snapshot: 26.6.2
     transitivePeerDependencies:
       - supports-color
@@ -15908,7 +15911,7 @@ packages:
     peerDependencies:
       jest: '>= 29.0.0'
     dependencies:
-      jest: 29.7.0(@types/node@20.11.26)(ts-node@10.9.2)
+      jest: 29.7.0(@types/node@20.11.27)(ts-node@10.9.2)
       jest-snapshot: 29.7.0
     transitivePeerDependencies:
       - supports-color
@@ -16029,7 +16032,7 @@ packages:
       merge-stream: 2.0.0
       supports-color: 8.1.1
 
-  /jest@29.7.0(@types/node@20.11.26)(ts-node@10.9.2):
+  /jest@29.7.0(@types/node@20.11.27)(ts-node@10.9.2):
     resolution: {integrity: sha512-NIy3oAFp9shda19hy4HK0HRTWKtPJmGdnvywu01nOqNC2vZg+Z+fvJDxpMQA88eb2I9EcafcdjYgsDthnYTvGw==, tarball: https://registry.npmjs.org/jest/-/jest-29.7.0.tgz}
     engines: {node: ^14.15.0 || ^16.10.0 || >=18.0.0}
     hasBin: true
@@ -16042,7 +16045,7 @@ packages:
       '@jest/core': 29.7.0(ts-node@10.9.2)
       '@jest/types': 29.6.3
       import-local: 3.1.0
-      jest-cli: 29.7.0(@types/node@20.11.26)(ts-node@10.9.2)
+      jest-cli: 29.7.0(@types/node@20.11.27)(ts-node@10.9.2)
     transitivePeerDependencies:
       - '@types/node'
       - babel-plugin-macros
@@ -18591,7 +18594,7 @@ packages:
     dependencies:
       lilconfig: 3.1.1
       postcss: 8.4.35
-      ts-node: 10.9.2(@swc/core@1.4.2)(@types/node@20.11.26)(typescript@4.9.5)
+      ts-node: 10.9.2(@swc/core@1.4.2)(@types/node@20.11.27)(typescript@4.9.5)
       yaml: 2.4.0
     dev: false
 
@@ -19514,7 +19517,7 @@ packages:
     dependencies:
       '@floating-ui/react': 0.26.9(react-dom@17.0.2)(react@17.0.2)
       classnames: 2.5.1
-      date-fns: 3.4.0
+      date-fns: 3.5.0
       prop-types: 15.8.1
       react: 17.0.2
       react-dom: 17.0.2(react@17.0.2)
@@ -22598,7 +22601,7 @@ packages:
       webpack: 5.90.3(@swc/core@1.4.2)(esbuild@0.18.20)(webpack-cli@4.10.0)
     dev: true
 
-  /ts-node@10.9.2(@swc/core@1.4.2)(@types/node@20.11.26)(typescript@4.9.5):
+  /ts-node@10.9.2(@swc/core@1.4.2)(@types/node@20.11.27)(typescript@4.9.5):
     resolution: {integrity: sha512-f0FFpIdcHgn8zcPSbf1dRevwt047YMnaiJM3u2w2RewrB+fob/zePZcrOyQoLMMO7aBIddLcQIEK5dYjkLnGrQ==, tarball: https://registry.npmjs.org/ts-node/-/ts-node-10.9.2.tgz}
     hasBin: true
     peerDependencies:
@@ -22618,7 +22621,7 @@ packages:
       '@tsconfig/node12': 1.0.11
       '@tsconfig/node14': 1.0.3
       '@tsconfig/node16': 1.0.4
-      '@types/node': 20.11.26
+      '@types/node': 20.11.27
       acorn: 8.11.3
       acorn-walk: 8.3.2
       arg: 4.1.3
@@ -23267,7 +23270,7 @@ packages:
       vfile-message: 2.0.4
     dev: true
 
-  /vite@3.2.8(@types/node@20.11.26):
+  /vite@3.2.8(@types/node@20.11.27):
     resolution: {integrity: sha512-EtQU16PLIJpAZol2cTLttNP1mX6L0SyI0pgQB1VOoWeQnMSvtiwovV3D6NcjN8CZQWWyESD2v5NGnpz5RvgOZA==, tarball: https://registry.npmjs.org/vite/-/vite-3.2.8.tgz}
     engines: {node: ^14.18.0 || >=16.0.0}
     hasBin: true
@@ -23292,7 +23295,7 @@ packages:
       terser:
         optional: true
     dependencies:
-      '@types/node': 20.11.26
+      '@types/node': 20.11.27
       esbuild: 0.15.18
       postcss: 8.4.35
       resolve: 1.22.8
