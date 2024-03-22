@@ -9,3 +9,4 @@ uncommittedStatus.json
 *.swp
 *.log
 .nfs*
+.gitkeep
