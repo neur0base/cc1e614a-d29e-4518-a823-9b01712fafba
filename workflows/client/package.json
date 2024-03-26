@@ -1,0 +1,16 @@
+{
+  "name": "jenio-codedir-template-workflows-client",
+  "version": "1.0.0",
+  "main": "dist/coreApi.js",
+  "types": "dist/coreApi.d.ts",
+  "license": "MIT",
+  "scripts": {
+    "build": "./node_modules/.bin/tsc"
+  },
+  "devDependencies": {
+    "typescript": "^5.1.6"
+  },
+  "dependencies": {
+    "@reduxjs/toolkit": "1.9.5"
+  }
+}

@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  jenio-codedir-template-workflows:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ~/Jenio-CodeDir-Template:/home/ubuntu/sys/
+    ports:
+      - "3000:3000"
+    environment:
+      ECHO_APP_DOMAIN:
+      ECHO_APP_ID:
+      ECHO_APP_KEY:

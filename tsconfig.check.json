@@ -1,0 +1,37 @@
+{
+  "compilerOptions": {
+    "paths": {
+      "@/*": ["./*"]
+    },
+    "allowJs": true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "isolatedModules": false,
+    "jsx": "react",
+    "lib": [
+      "es6",
+      "es5",
+      "dom",
+      "es2017"
+    ],
+    "moduleResolution": "node",
+    "noEmit": true,
+    "target": "ES5",
+    "module": "CommonJS",
+    "resolveJsonModule": true,
+    "useDefineForClassFields": true,
+    "noImplicitAny": false,
+    "skipLibCheck": true,
+    "strict": false
+  },
+  "exclude": [
+    "node_modules",
+    "babel.config.js",
+    "metro.config.js",
+    "jest.config.js",
+    "vite.config.js"
+  ],
+  "include": [
+    "src/**/*"
+  ]
+}

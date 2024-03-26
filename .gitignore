@@ -1,0 +1,12 @@
+node_modules/
+dist/
+*.out
+__screenshots__/
+.DS_Store
+yarn.lock
+outline_prompt.db
+uncommittedStatus.json
+*.swp
+*.log
+.nfs*
+.gitkeep
