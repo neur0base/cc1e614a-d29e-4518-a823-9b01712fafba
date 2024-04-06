@@ -8,12 +8,7 @@
     "esModuleInterop": true,
     "isolatedModules": true,
     "jsx": "react-native",
-    "lib": [
-      "es6",
-      "es5",
-      "dom",
-      "es2017"
-    ],
+    "lib": ["es6", "es5", "dom", "es2017"],
     "moduleResolution": "node",
     "noEmit": false,
     "target": "ES5",
