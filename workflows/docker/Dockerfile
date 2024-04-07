@@ -6,7 +6,7 @@ ENV TZ=UTC
 RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 
 # 必要なツールをインストール
-RUN apt-get update && apt-get install -y curl git && \
+RUN apt-get update && apt-get install -y curl git r-base && \
     # Node.jsのインストール
     curl -fsSL https://deb.nodesource.com/setup_18.x | bash - && \
     apt-get install -y nodejs && \
