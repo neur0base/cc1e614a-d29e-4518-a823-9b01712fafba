@@ -1,8 +1,8 @@
-import type {StorybookConfig} from '@storybook/react-webpack5';
+import type { StorybookConfig } from '@storybook/react-vite';
 import path from 'path';
 
 const config: StorybookConfig = {
-  framework: '@storybook/react-webpack5',
+  framework: '@storybook/react-vite',
   stories: [
     '../src/**/*.mdx',
     '../src/**/*.stories.@(js|jsx|ts|tsx)',
@@ -22,11 +22,8 @@ const config: StorybookConfig = {
   docs: {
     autodocs: false,
   },
-  webpackFinal: async (config, {configType}) => {
-    config.devtool = 'source-map';
-    config.resolve.alias = {
-      'react-native$': 'react-native-web',
-    };
+  viteFinal: async (config, { configType }) => {
+    // @ts-ignore
     config.module?.rules?.push({
       test: /\.css$/,
       use: [
@@ -42,6 +39,7 @@ const config: StorybookConfig = {
       ],
       include: path.resolve(__dirname, '../src'),
     });
+    // @ts-ignore
     config.module?.rules?.push({
       test: /\.ttf$/,
       loader: 'url-loader',
@@ -49,6 +47,26 @@ const config: StorybookConfig = {
         __dirname,
         '../node_modules/react-native-vector-icons/FontAwesome5.js',
       ),
+    });
+    // @ts-ignore
+    config.module?.rules?.push({
+      test: /\.tsx?$/,
+      exclude: /node_modules/,
+      use: [
+        {
+          loader: require.resolve('babel-loader'),
+          options: {
+            presets: [
+              require('@babel/preset-typescript').default,
+              [
+                require('@babel/preset-react').default,
+                { runtime: 'automatic' },
+              ],
+              require('@babel/preset-env').default,
+            ],
+          },
+        },
+      ],
     });
     return config;
   },
