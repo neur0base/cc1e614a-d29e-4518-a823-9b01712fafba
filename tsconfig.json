@@ -3,6 +3,7 @@
     "paths": {
       "@/*": ["./*"]
     },
+    "types": ["vite/client"],
     "allowJs": true,
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
