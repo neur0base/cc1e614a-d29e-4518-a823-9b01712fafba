@@ -12,6 +12,7 @@ export default defineConfig(({ mode }) => {
   );
   return {
     root,
+    base: './',
     plugins: [
       viteExternalsPlugin({
         'react-native$': 'react-native',
