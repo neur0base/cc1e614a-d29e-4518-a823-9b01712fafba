@@ -20,8 +20,13 @@ export declare type ViewTemplateComponentThemeColors = {
   deleteButtonColor: string;
 };
 
-export default function ViewTemplateComponent(props: ViewTemplateComponentProps): JSX.Element {
-  const { getUILabel, getThemeColor, getNewComponentID } = useUIContext<ViewTemplateComponentLabels, ViewTemplateComponentThemeColors>(props?.componentID);
+export default function ViewTemplateComponent(
+  props: ViewTemplateComponentProps,
+): JSX.Element {
+  const { getUILabel, getThemeColor, getNewComponentID } = useUIContext<
+    ViewTemplateComponentLabels,
+    ViewTemplateComponentThemeColors
+  >(props?.componentID);
 
   const styles = StyleSheet.create({
     container: {
@@ -42,12 +47,12 @@ export default function ViewTemplateComponent(props: ViewTemplateComponentProps)
 
   return (
     <View style={styles.container}>
-      <Button 
+      <Button
         styleName="primary"
         onClick={props?.onEditClick}
         componentID={getNewComponentID('EditButton')}
         color={getThemeColor('editButtonColor', 'primaryColor')}
-        style={[styles.button, styles.editButton]}
+        // style={[styles.button, styles.editButton]}
       >
         {getUILabel('editButtonLabel', 'Edit')}
       </Button>
@@ -56,7 +61,7 @@ export default function ViewTemplateComponent(props: ViewTemplateComponentProps)
         onClick={props?.onDeleteClick}
         componentID={getNewComponentID('DeleteButton')}
         color={getThemeColor('deleteButtonColor', 'errorColor')}
-        style={[styles.button, styles.deleteButton]}
+        // style={[styles.button, styles.deleteButton]}
       >
         {getUILabel('deleteButtonLabel', 'Delete')}
       </Button>

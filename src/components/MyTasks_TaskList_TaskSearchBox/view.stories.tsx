@@ -1,4 +1,4 @@
-import type {Meta, StoryObj} from '@storybook/react';
+import type { Meta, StoryObj } from '@storybook/react';
 import React from 'react';
 import ViewTemplateComponent from './view';
 
@@ -15,8 +15,12 @@ declare type Story = StoryObj<typeof ViewTemplateComponent>;
 
 export const MyTasks_TaskList_TaskSearchBox: Story = {
   args: {
-    onKeywordsChange: (keywords: string) => { alert("Keywords Changed: " + keywords) },
-    onSubmit: () => { alert("Search Submitted") },
-    componentID: ["MyTasks_TaskList_TaskSearchBox"],
-  }
+    onKeywordsChange: (keywords: string) => {
+      alert('Keywords Changed: ' + keywords);
+    },
+    onSubmit: () => {
+      alert('Search Submitted');
+    },
+    componentID: ['MyTasks_TaskList_TaskSearchBox'],
+  },
 };

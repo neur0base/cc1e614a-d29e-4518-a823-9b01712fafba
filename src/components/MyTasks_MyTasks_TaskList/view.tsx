@@ -15,26 +15,31 @@ export declare type ViewTemplateComponentProps = {
 
 export declare type ViewTemplateComponentLabels = {
   taskListTitle: string; // default: "Task List"
-  taskStatusNotStarted: string; // default: "Not Started" 
+  taskStatusNotStarted: string; // default: "Not Started"
   taskStatusInProgress: string; // default: "In Progress"
   taskStatusCompleted: string; // default: "Completed"
 };
 
 export declare type ViewTemplateComponentThemeColors = {
   taskNotStartedColor: string;
-  taskInProgressColor: string; 
+  taskInProgressColor: string;
   taskCompletedColor: string;
 };
 
-type Task = {
+export type Task = {
   id: string;
   title: string;
   status: 'notStarted' | 'inProgress' | 'completed';
   createdAt: string;
 };
 
-export default function ViewTemplateComponent(props: ViewTemplateComponentProps): JSX.Element {
-  const { getUILabel, getThemeColor, getNewComponentID } = useUIContext<ViewTemplateComponentLabels, ViewTemplateComponentThemeColors>(props?.componentID);
+export default function ViewTemplateComponent(
+  props: ViewTemplateComponentProps,
+): JSX.Element {
+  const { getUILabel, getThemeColor, getNewComponentID } = useUIContext<
+    ViewTemplateComponentLabels,
+    ViewTemplateComponentThemeColors
+  >(props?.componentID);
 
   const styles = StyleSheet.create({
     container: {
@@ -87,7 +92,7 @@ export default function ViewTemplateComponent(props: ViewTemplateComponentProps)
         break;
     }
 
-    return <Text style={{...styles.taskStatus, color}}>{label}</Text>;
+    return <Text style={{ ...styles.taskStatus, color }}>{label}</Text>;
   };
 
   const renderPagination = () => {
@@ -97,11 +102,14 @@ export default function ViewTemplateComponent(props: ViewTemplateComponentProps)
       pageButtons.push(
         <TouchableOpacity
           key={i}
-          style={{...styles.pageButton, ...(i === props.currentPage && styles.currentPage)}}
+          style={{
+            ...styles.pageButton,
+            ...(i === props.currentPage && styles.currentPage),
+          }}
           onPress={() => props.onPageChange(i)}
         >
           <Text>{i}</Text>
-        </TouchableOpacity>
+        </TouchableOpacity>,
       );
     }
 
@@ -110,7 +118,9 @@ export default function ViewTemplateComponent(props: ViewTemplateComponentProps)
 
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>{getUILabel('taskListTitle', 'Task List')}</Text>
+      <Text style={styles.title}>
+        {getUILabel('taskListTitle', 'Task List')}
+      </Text>
       {props.tasks.map((task) => (
         <TouchableOpacity
           key={task.id}
@@ -119,7 +129,9 @@ export default function ViewTemplateComponent(props: ViewTemplateComponentProps)
         >
           <Text style={styles.taskTitle}>{task.title}</Text>
           {renderTaskStatus(task.status)}
-          <Text style={styles.taskDate}>{moment(task.createdAt).format('YYYY-MM-DD')}</Text>
+          <Text style={styles.taskDate}>
+            {moment(task.createdAt).format('YYYY-MM-DD')}
+          </Text>
         </TouchableOpacity>
       ))}
       {renderPagination()}

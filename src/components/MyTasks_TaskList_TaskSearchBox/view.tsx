@@ -18,8 +18,13 @@ export declare type ViewTemplateComponentLabels = {
 
 export declare type ViewTemplateComponentThemeColors = Record<never, never>;
 
-export default function ViewTemplateComponent(props: ViewTemplateComponentProps): JSX.Element {
-  const { getUILabel, getNewComponentID } = useUIContext<ViewTemplateComponentLabels, ViewTemplateComponentThemeColors>(props?.componentID);
+export default function ViewTemplateComponent(
+  props: ViewTemplateComponentProps,
+): JSX.Element {
+  const { getUILabel, getNewComponentID } = useUIContext<
+    ViewTemplateComponentLabels,
+    ViewTemplateComponentThemeColors
+  >(props?.componentID);
 
   const styles = StyleSheet.create({
     container: {
@@ -37,8 +42,9 @@ export default function ViewTemplateComponent(props: ViewTemplateComponentProps)
         onFocus={() => {}}
         onBlur={() => {}}
         componentID={getNewComponentID('TaskSearchBox')}
-        placeholder={getUILabel('taskSearchBoxPlaceholder', 'Search tasks by title or description')}
-        submitLabel={getUILabel('taskSearchBoxSubmitLabel', 'Search')} />
+        // placeholder={getUILabel('taskSearchBoxPlaceholder', 'Search tasks by title or description')}
+        // submitLabel={getUILabel('taskSearchBoxSubmitLabel', 'Search')}
+      />
     </View>
   );
 }

@@ -1,5 +1,6 @@
 import React from 'react';
-import { ComponentID } from "@neur0base/app-sdk-core";
+import { ComponentID } from '@neur0base/app-sdk-core';
+import { TaskListViewModel } from '@/src/components/MyTasks_TaskList_TaskList/view';
 
 // Import all the components you use in this component from '@/src/components/views'.
 import {
@@ -25,7 +26,9 @@ export declare type RouteMockComponentProps = {
   componentID: ComponentID;
 };
 
-export default function RouteMockComponent(props: RouteMockComponentProps): JSX.Element {
+export default function RouteMockComponent(
+  props: RouteMockComponentProps,
+): JSX.Element {
   // Set the values of props for each component.
   const propsOfMyTasks_TaskList_TaskList = {
     tasks: props.tasks,
@@ -54,9 +57,15 @@ export default function RouteMockComponent(props: RouteMockComponentProps): JSX.
   // Keep the same layout as ActualRouteComponent.
   return (
     <div>
-      <MyTasks_TaskList_TaskSearchBox {...propsOfMyTasks_TaskList_TaskSearchBox} />
-      <MyTasks_TaskList_TaskStatusFilter {...propsOfMyTasks_TaskList_TaskStatusFilter} />
-      <MyTasks_TaskList_TaskListLimitSelector {...propsOfMyTasks_TaskList_TaskListLimitSelector} />
+      <MyTasks_TaskList_TaskSearchBox
+        {...propsOfMyTasks_TaskList_TaskSearchBox}
+      />
+      <MyTasks_TaskList_TaskStatusFilter
+        {...propsOfMyTasks_TaskList_TaskStatusFilter}
+      />
+      <MyTasks_TaskList_TaskListLimitSelector
+        {...propsOfMyTasks_TaskList_TaskListLimitSelector}
+      />
       <MyTasks_TaskList_TaskList {...propsOfMyTasks_TaskList_TaskList} />
     </div>
   );

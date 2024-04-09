@@ -14,16 +14,20 @@ export default function ViewModelComponent({
   recordID,
   componentID,
 }: ViewModelComponentProps): JSX.Element {
-  const [repositoryRowState, repositoryRowActions] = useDatabaseRecordRow<DataModelRow>({
-    instanceId: "tasks", // Set the ID of the Data Instance to be used.
-    refid: recordID,
-    options: {
-       preloaded: true,
-    },
-  });
+  const [repositoryRowState, repositoryRowActions] =
+    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+    // @ts-ignore
+    useDatabaseRecordRow<DataModelRow>({
+      instanceId: 'tasks', // Set the ID of the Data Instance to be used.
+      refid: recordID,
+      options: {
+        preloaded: true,
+      },
+    });
 
   const contextProps: ViewTemplateComponentProps = {
-    title: repositoryRowState?.data?.title || '',
+    // title: repositoryRowState?.data?.title || '',
+    recordID,
     componentID,
   };
 

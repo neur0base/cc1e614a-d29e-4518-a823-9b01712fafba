@@ -16,13 +16,18 @@ export declare type ViewTemplateComponentLabels = {
 
 export declare type ViewTemplateComponentThemeColors = Record<never, never>;
 
-export default function ViewTemplateComponent(props: ViewTemplateComponentProps): JSX.Element {
-  const { getUILabel, getThemeColor, getNewComponentID } = useUIContext<ViewTemplateComponentLabels, ViewTemplateComponentThemeColors>(props?.componentID);
+export default function ViewTemplateComponent(
+  props: ViewTemplateComponentProps,
+): JSX.Element {
+  const { getUILabel, getThemeColor, getNewComponentID } = useUIContext<
+    ViewTemplateComponentLabels,
+    ViewTemplateComponentThemeColors
+  >(props?.componentID);
 
   const limitOptions = [
-    { label: '10', value: 10 },
-    { label: '50', value: 50 },
-    { label: '100', value: 100 },
+    { label: '10', value: '10' },
+    { label: '50', value: '50' },
+    { label: '100', value: '100' },
   ];
 
   const styles = StyleSheet.create({
@@ -57,11 +62,7 @@ export default function ViewTemplateComponent(props: ViewTemplateComponentProps)
           }}
           componentID={getNewComponentID('TaskListLimitSelector')}
         >
-          {(formElements) => (
-            <>
-              {formElements.limit}
-            </>
-          )}
+          {(formElements) => <>{formElements.limit}</>}
         </Form>
       </View>
     </View>

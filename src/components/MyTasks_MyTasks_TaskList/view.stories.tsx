@@ -1,4 +1,4 @@
-import type {Meta, StoryObj} from '@storybook/react';
+import type { Meta, StoryObj } from '@storybook/react';
 import React from 'react';
 import ViewTemplateComponent from './view';
 
@@ -35,10 +35,14 @@ export const MyTasks_MyTasks_TaskList: Story = {
         createdAt: '2023-01-03',
       },
     ],
-    onTaskClick: (taskId: string) => { alert(`Task ${taskId} clicked`) },
-    onPageChange: (page: number) => { alert(`Page ${page} selected`) },
+    onTaskClick: (taskId: string) => {
+      alert(`Task ${taskId} clicked`);
+    },
+    onPageChange: (page: number) => {
+      alert(`Page ${page} selected`);
+    },
     currentPage: 1,
     totalPages: 3,
-    componentID: ["MyTasks_MyTasks_TaskList"],
-  }
+    componentID: ['MyTasks_MyTasks_TaskList'],
+  },
 };

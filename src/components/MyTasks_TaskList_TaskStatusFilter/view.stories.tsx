@@ -1,4 +1,4 @@
-import type {Meta, StoryObj} from '@storybook/react';
+import type { Meta, StoryObj } from '@storybook/react';
 import React from 'react';
 import ViewTemplateComponent from './view';
 
@@ -15,7 +15,9 @@ declare type Story = StoryObj<typeof ViewTemplateComponent>;
 
 export const MyTasks_TaskList_TaskStatusFilter: Story = {
   args: {
-    onFilterChange: (status: string) => { alert(`Filter changed to: ${status}`) },
-    componentID: ["MyTasks_TaskList_TaskStatusFilter"],
-  }
+    onFilterChange: (status: string) => {
+      alert(`Filter changed to: ${status}`);
+    },
+    componentID: ['MyTasks_TaskList_TaskStatusFilter'],
+  },
 };

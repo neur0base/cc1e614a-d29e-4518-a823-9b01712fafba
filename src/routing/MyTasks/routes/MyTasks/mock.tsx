@@ -1,5 +1,6 @@
 import React from 'react';
-import { ComponentID } from "@neur0base/app-sdk-core";
+import { ComponentID } from '@neur0base/app-sdk-core';
+import { Task } from '@/src/components/MyTasks_MyTasks_TaskList/view';
 
 // Import all the components you use in this component from '@/src/components/views'.
 import {
@@ -17,10 +18,14 @@ export declare type RouteMockComponentProps = {
   componentID: ComponentID;
 };
 
-export default function RouteMockComponent(props: RouteMockComponentProps): JSX.Element {
-
+export default function RouteMockComponent(
+  props: RouteMockComponentProps,
+): JSX.Element {
   // Set the values of props for each component.
   const propsOfMyTasks_MyTasks_Header = {
+    onAddTaskClick: () => {
+      props.onTaskClick('new');
+    },
     componentID: props.componentID,
   };
   const propsOfMyTasks_MyTasks_TaskList = {

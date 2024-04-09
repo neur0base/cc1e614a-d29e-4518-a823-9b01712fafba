@@ -1,4 +1,4 @@
-import type {Meta, StoryObj} from '@storybook/react';
+import type { Meta, StoryObj } from '@storybook/react';
 import React from 'react';
 import ViewTemplateComponent from './view';
 
@@ -15,8 +15,12 @@ declare type Story = StoryObj<typeof ViewTemplateComponent>;
 
 export const MyTasks_TaskDetail_TaskDetailActions: Story = {
   args: {
-    onEditClick: () => { alert("Edit Clicked") },
-    onDeleteClick: () => { alert("Delete Clicked") },
-    componentID: ["MyTasks", "TaskDetail", "TaskDetailActions"],
-  }
+    onEditClick: () => {
+      alert('Edit Clicked');
+    },
+    onDeleteClick: () => {
+      alert('Delete Clicked');
+    },
+    componentID: ['MyTasks', 'TaskDetail', 'TaskDetailActions'],
+  },
 };

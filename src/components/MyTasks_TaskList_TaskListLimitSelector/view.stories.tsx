@@ -1,4 +1,4 @@
-import type {Meta, StoryObj} from '@storybook/react';
+import type { Meta, StoryObj } from '@storybook/react';
 import React from 'react';
 import ViewTemplateComponent from './view';
 
@@ -16,7 +16,9 @@ declare type Story = StoryObj<typeof ViewTemplateComponent>;
 export const MyTasks_TaskList_TaskListLimitSelector: Story = {
   args: {
     selectedLimit: 10,
-    onLimitChange: (limit: number) => { alert(`Limit changed to ${limit}`) },
-    componentID: ["MyTasks", "TaskList", "TaskListLimitSelector"],
-  }
+    onLimitChange: (limit: number) => {
+      alert(`Limit changed to ${limit}`);
+    },
+    componentID: ['MyTasks', 'TaskList', 'TaskListLimitSelector'],
+  },
 };

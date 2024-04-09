@@ -1,4 +1,4 @@
-import type {Meta, StoryObj} from '@storybook/react';
+import type { Meta, StoryObj } from '@storybook/react';
 import React from 'react';
 import ViewTemplateComponent from './view';
 
@@ -32,7 +32,9 @@ export const MyTasks_TaskList_TaskList: Story = {
     limit: 10,
     page: 1,
     order: 'createdAt desc',
-    onTaskClick: (taskId: string) => { alert(`Task ${taskId} clicked`) },
-    componentID: ["MyTasks_TaskList_TaskList"],
-  }
+    onTaskClick: (taskId: string) => {
+      alert(`Task ${taskId} clicked`);
+    },
+    componentID: ['MyTasks_TaskList_TaskList'],
+  },
 };

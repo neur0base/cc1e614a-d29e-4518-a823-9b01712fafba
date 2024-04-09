@@ -21,16 +21,18 @@ export default function ViewModelComponent({
   onTaskClick,
   componentID,
 }: ViewModelComponentProps): JSX.Element {
-
-  const [repositoryListState, repositoryListActions] = useDatabaseRecordList<DataModelRow>({
-    instanceId: "tasks",
-    condition: {
-      limit,
-      page,
-      order,
-    },
-    preloaded: true,
-  });
+  const [repositoryListState, repositoryListActions] =
+    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+    // @ts-ignore
+    useDatabaseRecordList<DataModelRow>({
+      instanceId: 'tasks',
+      condition: {
+        limit,
+        page,
+        order,
+      },
+      preloaded: true,
+    });
 
   const tasks = repositoryListState.collection.map((task: DataModelRow) => ({
     id: task?.refid || '',

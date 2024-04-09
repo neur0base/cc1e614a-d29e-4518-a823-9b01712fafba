@@ -15,22 +15,26 @@ export default function ViewModelComponent({
   recordID,
   componentID,
 }: ViewModelComponentProps): JSX.Element {
-  const [repositoryRowState, repositoryRowActions] = useDatabaseRecordRow<DataModelRow>({
-    instanceId: "tasks",
-    refid: recordID,
-    options: {
-       preloaded: true,
-    },
-  });
+  const [repositoryRowState, repositoryRowActions] =
+    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+    // @ts-ignore
+    useDatabaseRecordRow<DataModelRow>({
+      instanceId: 'tasks',
+      refid: recordID,
+      options: {
+        preloaded: true,
+      },
+    });
 
   const task = repositoryRowState?.data;
 
   const contextProps: ViewTemplateComponentProps = {
-    title: task?.title || '',
-    description: task?.description || '',
-    status: task?.contents?.status || '',
-    created: task?.created ? moment(task.created).format('YYYY-MM-DD HH:mm:ss') : '',
-    modified: task?.modified ? moment(task.modified).format('YYYY-MM-DD HH:mm:ss') : '',
+    // title: task?.title || '',
+    // description: task?.description || '',
+    // status: task?.contents?.status || '',
+    // created: task?.created ? moment(task.created).format('YYYY-MM-DD HH:mm:ss') : '',
+    // modified: task?.modified ? moment(task.modified).format('YYYY-MM-DD HH:mm:ss') : '',
+    recordID,
     componentID,
   };
 

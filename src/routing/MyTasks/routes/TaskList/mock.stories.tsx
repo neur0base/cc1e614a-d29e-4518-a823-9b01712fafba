@@ -34,11 +34,26 @@ export const MyTasksTaskList: Story = {
     order: 'createdAt desc',
     selectedLimit: 10,
     keywords: '',
-    onTaskClick: (taskId: string) => { alert(`Task ${taskId} clicked`) },
-    onLimitChange: (limit: number) => { alert(`Limit changed to ${limit}`) },
-    onKeywordsChange: (keywords: string) => { alert(`Keywords changed to ${keywords}`) },
-    onSubmit: () => { alert('Search submitted') },
-    onFilterChange: (status: string) => { alert(`Filter changed to ${status}`) },
-    componentID: ["MyTasks_TaskList_TaskList", "MyTasks_TaskList_TaskListLimitSelector", "MyTasks_TaskList_TaskSearchBox", "MyTasks_TaskList_TaskStatusFilter"],
-  }
+    onTaskClick: (taskId: string) => {
+      alert(`Task ${taskId} clicked`);
+    },
+    onLimitChange: (limit: number) => {
+      alert(`Limit changed to ${limit}`);
+    },
+    onKeywordsChange: (keywords: string) => {
+      alert(`Keywords changed to ${keywords}`);
+    },
+    onSubmit: () => {
+      alert('Search submitted');
+    },
+    onFilterChange: (status: string) => {
+      alert(`Filter changed to ${status}`);
+    },
+    componentID: [
+      'MyTasks_TaskList_TaskList',
+      'MyTasks_TaskList_TaskListLimitSelector',
+      'MyTasks_TaskList_TaskSearchBox',
+      'MyTasks_TaskList_TaskStatusFilter',
+    ],
+  },
 };
