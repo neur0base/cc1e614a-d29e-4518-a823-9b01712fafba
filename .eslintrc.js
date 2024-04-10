@@ -21,6 +21,7 @@ module.exports = {
         "@typescript-eslint"
     ],
     "rules": {
+        "react/no-children-prop": "off",
         "react/jsx-uses-react": "off",
         "react/react-in-jsx-scope": "off",
         "@typescript-eslint/no-inferrable-types": "off",
