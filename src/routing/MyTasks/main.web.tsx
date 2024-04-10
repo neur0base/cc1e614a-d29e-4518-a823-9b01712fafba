@@ -1,5 +1,4 @@
 import React from 'react';
-import { createRoot } from 'react-dom/client';
 import { DynamicRouter } from '@neur0base/app-sdk-core';
 import { initialize } from '@echopf/sdk';
 import instances from '@/src/config/instances';
@@ -10,7 +9,7 @@ import appConfig from './app';
 import routes from './routes';
 import * as components from './routes/index';
 
-const App = () => {
+export default function Main() {
   // [ToDo] Obfuscate secureDomain & appID & appKey by env variables
   const backendClient = initialize(
     process.env.API_ENDPOINT,
@@ -34,8 +33,4 @@ const App = () => {
       locales={locales}
     />
   );
-};
-
-const container = document.getElementById('root');
-const root = createRoot(container!); // createRoot(container!) if you use TypeScript
-root.render(<App />);
+}
