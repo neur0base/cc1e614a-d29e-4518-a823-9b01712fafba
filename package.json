@@ -5,7 +5,7 @@
   "scripts": {
     "test": "jest",
     "run:web": "vite -c vite.config.ts",
-    "build:web": "tsc && vite build -c vite.config.ts",
+    "build:web": "vite build -c vite.config.ts",
     "build": "yarn build:web",
     "format": "prettier --write \"src/**/*.{ts,tsx}\"",
     "lint:all": "node node_modules/eslint/bin/eslint.js 'src/**/*.{js,jsx,ts,tsx}'",

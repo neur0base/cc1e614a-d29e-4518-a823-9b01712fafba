@@ -1,6 +1,6 @@
 import type { Preview } from '@storybook/react';
 // import '@/src/web/index.css';
-// import { withScreenshot } from 'storycap';
+import { withScreenshot } from 'storycap';
 import withProvider from './withProvider';
 
 import FontAwesome from 'react-native-vector-icons/Fonts/FontAwesome.ttf';
@@ -56,7 +56,10 @@ const preview: Preview = {
     // i18n,
   },
   loaders: [],
-  decorators: [withProvider],
+  decorators: [
+    withProvider,
+    withScreenshot(),
+  ],
 };
 
 export default preview;
