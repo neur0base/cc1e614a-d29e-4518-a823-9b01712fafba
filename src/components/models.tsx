@@ -1,9 +1,0 @@
-export { default as  MyTasks_MyTasks_Header } from './MyTasks_MyTasks_Header/model';
-export { default as  MyTasks_MyTasks_TaskList } from './MyTasks_MyTasks_TaskList/model';
-export { default as  MyTasks_TaskDetail_TaskDetailActions } from './MyTasks_TaskDetail_TaskDetailActions/model';
-export { default as  MyTasks_TaskDetail_TaskDetailInfo } from './MyTasks_TaskDetail_TaskDetailInfo/model';
-export { default as  MyTasks_TaskDetail_TaskDetailTitle } from './MyTasks_TaskDetail_TaskDetailTitle/model';
-export { default as  MyTasks_TaskList_TaskList } from './MyTasks_TaskList_TaskList/model';
-export { default as  MyTasks_TaskList_TaskListLimitSelector } from './MyTasks_TaskList_TaskListLimitSelector/model';
-export { default as  MyTasks_TaskList_TaskSearchBox } from './MyTasks_TaskList_TaskSearchBox/model';
-export { default as  MyTasks_TaskList_TaskStatusFilter } from './MyTasks_TaskList_TaskStatusFilter/model';

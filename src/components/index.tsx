@@ -1,9 +1,0 @@
-export { default as  MyTasks_MyTasks_Header } from './MyTasks_MyTasks_Header/index';
-export { default as  MyTasks_MyTasks_TaskList } from './MyTasks_MyTasks_TaskList/index';
-export { default as  MyTasks_TaskDetail_TaskDetailActions } from './MyTasks_TaskDetail_TaskDetailActions/index';
-export { default as  MyTasks_TaskDetail_TaskDetailInfo } from './MyTasks_TaskDetail_TaskDetailInfo/index';
-export { default as  MyTasks_TaskDetail_TaskDetailTitle } from './MyTasks_TaskDetail_TaskDetailTitle/index';
-export { default as  MyTasks_TaskList_TaskList } from './MyTasks_TaskList_TaskList/index';
-export { default as  MyTasks_TaskList_TaskListLimitSelector } from './MyTasks_TaskList_TaskListLimitSelector/index';
-export { default as  MyTasks_TaskList_TaskSearchBox } from './MyTasks_TaskList_TaskSearchBox/index';
-export { default as  MyTasks_TaskList_TaskStatusFilter } from './MyTasks_TaskList_TaskStatusFilter/index';
