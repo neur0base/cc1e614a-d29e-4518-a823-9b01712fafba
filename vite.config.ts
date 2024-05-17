@@ -38,6 +38,9 @@ export default defineConfig(({ mode }) => {
 
     server: {
       port: Number(process.env.PORT) || 9020,
+      /*fs: {
+        allow: ['/'],
+      }*/
     },
 
     build: {
@@ -54,6 +57,7 @@ export default defineConfig(({ mode }) => {
     resolve: {
       alias: {
         '@': path.resolve(__dirname, './'),
+        '@neur0base/app-sdk-router': '@neur0base/app-sdk-react-router',
         '@jenify_ai/app-sdk-router': '@neur0base/app-sdk-react-router',
         '@jenify_ai/app-sdk-core': '@neur0base/app-sdk-core',
         '@jenify_ai/app-sdk-ui': '@neur0base/app-sdk-ui',

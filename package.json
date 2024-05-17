@@ -17,7 +17,7 @@
     "@gorhom/bottom-sheet": "^4.6.1",
     "@headlessui/react": "^1.7.19",
     "@neur0base/app-sdk-core": "^0.0.110",
-    "@neur0base/app-sdk-react-router": "^0.0.2",
+    "@neur0base/app-sdk-react-router": "^0.0.3",
     "@neur0base/app-sdk-ui": "^0.0.52",
     "@react-native-async-storage/async-storage": "^1.23.1",
     "@react-native-community/checkbox": "^0.5.17",

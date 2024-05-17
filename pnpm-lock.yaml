@@ -25,8 +25,8 @@ dependencies:
     specifier: ^0.0.110
     version: 0.0.110(@babel/core@7.24.5)(@react-native-community/masked-view@0.1.11)(react-dom@18.3.1)(react-native-gesture-handler@1.10.3)(react-native-safe-area-context@3.4.1)(react-native-screens@2.18.1)(react@18.3.1)
   '@neur0base/app-sdk-react-router':
-    specifier: ^0.0.2
-    version: 0.0.2(@babel/core@7.24.5)(@react-native-community/masked-view@0.1.11)(react-dom@18.3.1)(react-native-gesture-handler@1.10.3)(react-native-safe-area-context@3.4.1)(react-native-screens@2.18.1)(react@18.3.1)
+    specifier: ^0.0.3
+    version: 0.0.3(@babel/core@7.24.5)(@react-native-community/masked-view@0.1.11)(react-dom@18.3.1)(react-native-gesture-handler@1.10.3)(react-native-safe-area-context@3.4.1)(react-native-screens@2.18.1)(react@18.3.1)
   '@neur0base/app-sdk-ui':
     specifier: ^0.0.52
     version: 0.0.52(@babel/core@7.24.5)(@babel/preset-env@7.24.5)(@react-native-community/masked-view@0.1.11)(@types/jest@27.5.2)(jest@29.7.0)(react-native-gesture-handler@1.10.3)(react-native-safe-area-context@3.4.1)(react-native-screens@2.18.1)(webpack@5.91.0)
@@ -3541,8 +3541,8 @@ packages:
       - utf-8-validate
     dev: false
 
-  /@neur0base/app-sdk-react-router@0.0.2(@babel/core@7.24.5)(@react-native-community/masked-view@0.1.11)(react-dom@18.3.1)(react-native-gesture-handler@1.10.3)(react-native-safe-area-context@3.4.1)(react-native-screens@2.18.1)(react@18.3.1):
-    resolution: {integrity: sha512-UEN9DFOsX47CciES0GRkqMliYDgWaYuD/a2T4uYQoE0Wy7jDdwyVglWKLz0Ipc0o7sO3BZDYh7a1Npr8qoEHxQ==, tarball: https://npm.pkg.github.com/download/@neur0base/app-sdk-react-router/0.0.2/bdddb191d43404e22c7a9527304e6821f8c3331d}
+  /@neur0base/app-sdk-react-router@0.0.3(@babel/core@7.24.5)(@react-native-community/masked-view@0.1.11)(react-dom@18.3.1)(react-native-gesture-handler@1.10.3)(react-native-safe-area-context@3.4.1)(react-native-screens@2.18.1)(react@18.3.1):
+    resolution: {integrity: sha512-D7E4ENQddYwkaHkTK68hT7btda9bQCfBpoKrPC7aEG4rbCn9En7ECEufAVjXp9y35pYAVv5tjxiVWW+6vexYqQ==, tarball: https://npm.pkg.github.com/download/@neur0base/app-sdk-react-router/0.0.3/14f025daa4b4a830f261644ef1197f13a0d9401a}
     peerDependencies:
       react: ^18.0.0
       react-dom: ^18.0.0
@@ -9578,7 +9578,6 @@ packages:
 
   /async-each@1.0.6:
     resolution: {integrity: sha512-c646jH1avxr+aVpndVMeAfYw7wAa6idufrlN3LPA4PmKS0QEGp6PIC9nwz0WQkkvBGAMEki3pFdtxaF39J9vvg==, tarball: https://registry.npmjs.org/async-each/-/async-each-1.0.6.tgz}
-    requiresBuild: true
 
   /async-limiter@1.0.1:
     resolution: {integrity: sha512-csOlWGAcRFJaI6m+F2WKdnMKr4HhdhFVBk0H/QbJFMCr+uO2kwohwXQPxw/9OCxp05r5ghVBFSyioixx3gfkNQ==, tarball: https://registry.npmjs.org/async-limiter/-/async-limiter-1.0.1.tgz}
@@ -10515,7 +10514,6 @@ packages:
   /binary-extensions@1.13.1:
     resolution: {integrity: sha512-Un7MIEDdUC5gNpcGDV97op1Ywk748MpHcFTHoYs6qnj1Z3j7I53VG3nwZhKzoBZmbdRNnb6WRdFlwl7tSDuZGw==, tarball: https://registry.npmjs.org/binary-extensions/-/binary-extensions-1.13.1.tgz}
     engines: {node: '>=0.10.0'}
-    requiresBuild: true
 
   /binary-extensions@2.3.0:
     resolution: {integrity: sha512-Ceh+7ox5qe7LJuLHoY0feh3pHuUDHAcRUeyL2VYghZwfpkNIy/+8Ocg0a3UuSoYzavmylwuLWQOf3hl0jjMMIw==, tarball: https://registry.npmjs.org/binary-extensions/-/binary-extensions-2.3.0.tgz}
@@ -11031,7 +11029,6 @@ packages:
   /chokidar@2.1.8:
     resolution: {integrity: sha512-ZmZUazfOzf0Nve7duiCKD23PFSCs4JPoYyccjUFF3aQkQadqBhfzhjkwBH2mNOG9cTBwhamM37EIsIkZw3nRgg==, tarball: https://registry.npmjs.org/chokidar/-/chokidar-2.1.8.tgz}
     deprecated: Chokidar 2 does not receive security updates since 2019. Upgrade to chokidar 3 with 15x fewer dependencies
-    requiresBuild: true
     dependencies:
       anymatch: 2.0.0
       async-each: 1.0.6
@@ -15111,7 +15108,6 @@ packages:
   /is-binary-path@1.0.1:
     resolution: {integrity: sha512-9fRVlXc0uCxEDj1nQzaWONSpbTfx0FmJfzHF7pwlI8DkWGoHBBea4Pg5Ky0ojwwxQmnSifgbKkI06Qv0Ljgj+Q==, tarball: https://registry.npmjs.org/is-binary-path/-/is-binary-path-1.0.1.tgz}
     engines: {node: '>=0.10.0'}
-    requiresBuild: true
     dependencies:
       binary-extensions: 1.13.1
 
@@ -17921,7 +17917,6 @@ packages:
   /normalize-path@2.1.1:
     resolution: {integrity: sha512-3pKJwH184Xo/lnH6oyP1q2pMd7HcypqqmRs91/6/i2CGtWwIKGCkOOMTm/zXbgTEWHw1uNpNi/igc3ePOYHb6w==, tarball: https://registry.npmjs.org/normalize-path/-/normalize-path-2.1.1.tgz}
     engines: {node: '>=0.10.0'}
-    requiresBuild: true
     dependencies:
       remove-trailing-separator: 1.1.0
 
@@ -18444,7 +18439,6 @@ packages:
 
   /path-dirname@1.0.2:
     resolution: {integrity: sha512-ALzNPpyNq9AqXMBjeymIjFDAkAFH06mHJH/cSBHAgU0s4vfpBn6b2nf8tiRLvagKD8RbTpq2FKTBg7cl9l3c7Q==, tarball: https://registry.npmjs.org/path-dirname/-/path-dirname-1.0.2.tgz}
-    requiresBuild: true
 
   /path-exists@3.0.0:
     resolution: {integrity: sha512-bpC7GYwiDYQ4wYLe+FA8lhRjhQCMcQGuSgGGqDkg/QerRWw9CmGRT0iSOVRSZJ29NMLZgIzqaljJ63oaL4NIJQ==, tarball: https://registry.npmjs.org/path-exists/-/path-exists-3.0.0.tgz}
@@ -19932,7 +19926,7 @@ packages:
     dependencies:
       hoist-non-react-statics: 2.5.5
       react: 18.3.1
-      react-native: 0.73.8(@babel/core@7.24.5)(@babel/preset-env@7.24.5)(react@18.3.1)
+      react-native: 0.73.8(@babel/core@7.24.5)(@babel/preset-env@7.19.4)(react@18.3.1)
     dev: false
 
   /react-native-screens@2.18.1(react-native@0.73.8)(react@18.3.1):
@@ -20486,7 +20480,6 @@ packages:
   /readdirp@2.2.1:
     resolution: {integrity: sha512-1JU/8q+VgFZyxwrJ+SVIOsh+KywWGpds3NTqikiKpDMZWScmAYyKIgqkO+ARvNWJfXeXR1zxz7aHF4u4CyH6vQ==, tarball: https://registry.npmjs.org/readdirp/-/readdirp-2.2.1.tgz}
     engines: {node: '>=0.10'}
-    requiresBuild: true
     dependencies:
       graceful-fs: 4.2.11
       micromatch: 3.1.10
@@ -20724,7 +20717,6 @@ packages:
 
   /remove-trailing-separator@1.1.0:
     resolution: {integrity: sha512-/hS+Y0u3aOfIETiaiirUFwDBDzmXPvO+jAfKTitUngIPzdKc6Z0LoFjM/CK5PL4C+eKwHohlHAb6H0VFfmmUsw==, tarball: https://registry.npmjs.org/remove-trailing-separator/-/remove-trailing-separator-1.1.0.tgz}
-    requiresBuild: true
 
   /renderkid@2.0.7:
     resolution: {integrity: sha512-oCcFyxaMrKsKcTY59qnCAtmDVSLfPbrv6A3tVbPdFMMrv5jaK10V6m40cKsoPNhAqN6rmHW9sswW4o3ruSrwUQ==, tarball: https://registry.npmjs.org/renderkid/-/renderkid-2.0.7.tgz}
@@ -22837,7 +22829,6 @@ packages:
   /upath@1.2.0:
     resolution: {integrity: sha512-aZwGpamFO61g3OlfT7OQCHqhGnW43ieH9WZeP7QxN/G/jS4jfqUkZxoryvJgVPEcrl5NL/ggHsSmLMHuH64Lhg==, tarball: https://registry.npmjs.org/upath/-/upath-1.2.0.tgz}
     engines: {node: '>=4'}
-    requiresBuild: true
 
   /upath@2.0.1:
     resolution: {integrity: sha512-1uEe95xksV1O0CYKXo8vQvN1JEbtJp7lb7C5U9HMsIp6IVwntkH/oNUzyVNQSd4S1sYk2FpSSW44FqMc8qee5w==, tarball: https://registry.npmjs.org/upath/-/upath-2.0.1.tgz}
