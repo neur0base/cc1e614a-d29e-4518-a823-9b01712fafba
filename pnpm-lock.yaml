@@ -21,6 +21,9 @@ dependencies:
   '@headlessui/react':
     specifier: ^1.7.19
     version: 1.7.19(react-dom@18.3.1)(react@18.3.1)
+  '@jenify_ai/app-sdk-core':
+    specifier: npm:@neur0base/app-sdk-core@^0.0.110
+    version: /@neur0base/app-sdk-core@0.0.110(@babel/core@7.24.5)(@react-native-community/masked-view@0.1.11)(react-dom@18.3.1)(react-native-gesture-handler@1.10.3)(react-native-safe-area-context@3.4.1)(react-native-screens@2.18.1)(react@18.3.1)
   '@neur0base/app-sdk-core':
     specifier: ^0.0.110
     version: 0.0.110(@babel/core@7.24.5)(@react-native-community/masked-view@0.1.11)(react-dom@18.3.1)(react-native-gesture-handler@1.10.3)(react-native-safe-area-context@3.4.1)(react-native-screens@2.18.1)(react@18.3.1)
