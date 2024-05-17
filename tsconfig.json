@@ -2,7 +2,8 @@
   "compilerOptions": {
     "outDir": "./dist",
     "paths": {
-      "@/*": ["./*"]
+      "@/*": ["./*"],
+      "@jenify_ai/*": ["./node_modules/@neur0base/*"],
     },
     "types": ["vite/client"],
     "allowJs": true,
