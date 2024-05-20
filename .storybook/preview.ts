@@ -1,37 +1,7 @@
 import type { Preview } from '@storybook/react';
-// import '@/src/web/index.css';
 import { withScreenshot } from 'storycap';
 import withProvider from './withProvider';
-
-import FontAwesome from 'react-native-vector-icons/Fonts/FontAwesome.ttf';
-import Ionicons from 'react-native-vector-icons/Fonts/Ionicons.ttf';
-import MaterialIcons from 'react-native-vector-icons/Fonts/MaterialIcons.ttf';
-
-import '../src/tailwind.css';
-
-export function appendStyleSheet(style: string) {
-  const styleElement = document.createElement('style');
-  styleElement.type = 'text/css';
-  if ((styleElement as any).styleSheet) {
-    (styleElement as any).styleSheet.cssText = style;
-  } else {
-    styleElement.appendChild(document.createTextNode(style));
-  }
-  document.head.appendChild(styleElement);
-}
-
-appendStyleSheet(`@font-face {
-  src: url(${FontAwesome});
-  font-family: FontAwesome;
-}`);
-appendStyleSheet(`@font-face {
-  src: url(${Ionicons});
-  font-family: Ionicons;
-}`);
-appendStyleSheet(`@font-face {
-  src: url(${MaterialIcons});
-  font-family: MaterialIcons;
-}`);
+import '../web/styles';
 
 const preview: Preview = {
   globals: {
