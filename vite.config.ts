@@ -69,11 +69,11 @@ export default defineConfig(({ mode }) => {
 
     define: {
       'process.env': {
-        ENVIRONMENT: `"${env?.ENVIRONMENT || 'development'}"`,
-        ROUTING_ID: `${env?.ROUTING_ID || 'default_web_routing'}`,
-        API_ENDPOINT: `"${env?.API_ENDPOINT}"`,
-        API_APP_ID: `"${env?.API_APP_ID}"`,
-        API_APP_KEY: `"${env?.API_APP_KEY}"`,
+        ENVIRONMENT: env?.ENVIRONMENT || "development",
+        ROUTING_ID: env?.ROUTING_ID || "default_web_routing",
+        API_ENDPOINT: env?.API_ENDPOINT || "",
+        API_APP_ID: env?.API_APP_ID || "",
+        API_APP_KEY: env?.API_APP_KEY || "",
       },
     },
 
