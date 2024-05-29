@@ -3,8 +3,6 @@ export const framework = {
   options: {},
 };
 
-export const staticDirs = ['../public'];
-
 export const stories = [
   '../src/**/*.mdx',
   '../src/**/*.stories.@(js|jsx|ts|tsx)',

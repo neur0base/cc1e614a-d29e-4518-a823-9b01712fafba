@@ -3,15 +3,24 @@ import react from '@vitejs/plugin-react';
 import fs from 'fs';
 import path, { resolve } from 'path';
 
+const extensions = [
+  '.web.tsx',
+  '.web.ts',
+  '.web.js',
+  '.tsx',
+  '.ts',
+  '.js',
+]
+
 export default defineConfig(({ mode }) => {
-  const root = resolve(__dirname, `./src/`);
+  const root = resolve(__dirname, `./web/`);
   const env = loadEnv(mode, process.cwd(), '');
   const packageJson: { dependencies: Record<string, string> } = JSON.parse(
     fs.readFileSync('package.json').toString(),
   );
   return {
     root,
-    base: './',
+    base: '/',
     plugins: [
       react({
         exclude: /\.stories\.tsx?$/,
@@ -25,6 +34,9 @@ export default defineConfig(({ mode }) => {
 
     server: {
       port: Number(process.env.PORT) || 9020,
+      /*fs: {
+        allow: ['/'],
+      }*/
     },
 
     build: {
@@ -41,38 +53,29 @@ export default defineConfig(({ mode }) => {
     resolve: {
       alias: {
         '@': path.resolve(__dirname, './'),
-
+        '@neur0base/app-sdk-router': '@neur0base/app-sdk-react-router',
+        '@jenify_ai/app-sdk-router': '@neur0base/app-sdk-react-router',
+        '@jenify_ai/app-sdk-core': '@neur0base/app-sdk-core',
+        '@jenify_ai/app-sdk-ui': '@neur0base/app-sdk-ui',
         'react-native': 'react-native-web',
-        'react-native-push-notification': path.resolve(
-          __dirname,
-          './src/temp/NotProvided/PushNotification.tsx',
-        ),
-        'react-native-fs': path.resolve(
-          __dirname,
-          './src/temp/NotProvided/RNFS.tsx',
-        ),
-        'react-native-permissions': path.resolve(
-          __dirname,
-          './src/temp/NotProvided/RNPermissions.tsx',
-        ),
       },
-      extensions: ['.web.js', '.js', '.ts', '.jsx', '.tsx'],
+      extensions,
       dedupe: Object.keys(packageJson.dependencies),
     },
 
     define: {
       'process.env': {
-        ENVIRONMENT: `"${env?.ENVIRONMENT || 'development'}"`,
-        ROUTING_ID: `${env?.ROUTING_ID || 'default_web_routing'}`,
-        API_ENDPOINT: `"${env?.API_ENDPOINT}"`,
-        API_APP_ID: `"${env?.API_APP_ID}"`,
-        API_APP_KEY: `"${env?.API_APP_KEY}"`,
+        ENVIRONMENT: env?.ENVIRONMENT || "development",
+        ROUTING_ID: env?.ROUTING_ID || "default_web_routing",
+        API_ENDPOINT: env?.API_ENDPOINT || "",
+        API_APP_ID: env?.API_APP_ID || "",
+        API_APP_KEY: env?.API_APP_KEY || "",
       },
     },
 
     optimizeDeps: {
       esbuildOptions: {
-        resolveExtensions: ['.web.js', '.js', '.ts', '.jsx', '.tsx'],
+        resolveExtensions: extensions,
       },
     },
   };
