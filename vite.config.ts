@@ -1,5 +1,4 @@
 import { defineConfig, loadEnv } from 'vite';
-import { viteExternalsPlugin } from 'vite-plugin-externals';
 import react from '@vitejs/plugin-react';
 import fs from 'fs';
 import path, { resolve } from 'path';
@@ -23,9 +22,6 @@ export default defineConfig(({ mode }) => {
     root,
     base: '/',
     plugins: [
-      viteExternalsPlugin({
-        'react-native$': 'react-native',
-      }),
       react({
         exclude: /\.stories\.tsx?$/,
         babel: {
