@@ -60,7 +60,7 @@ export default function DefaultLayoutComponent({ children }: { children: React.R
                                     className={`w-full flex items-center space-x-2 py-2 px-2 rounded-lg`}
                                     key={menuItem?.routeID}
                                     onClick={() => navigate(menuItem?.routeID)}>
-                                    {menuItem?.icon && (<Icon name={menuItem?.icon} />)}
+                                    {menuItem?.icon && (<Icon {...menuItem?.icon} />)}
                                     <span className="text-sm font-medium" style={styles.menuButtonText}>
                                       {menuItem?.title}
                                     </span>

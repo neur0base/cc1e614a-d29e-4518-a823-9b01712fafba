@@ -3,7 +3,10 @@
     "outDir": "./dist",
     "paths": {
       "@/*": ["./*"],
-      "@jenify_ai/*": ["./node_modules/@neur0base/*"],
+      "@neur0base/app-sdk-router": ["./node_modules/@neur0base/app-sdk-react-router"],
+      "@jenify_ai/app-sdk-router": ["./node_modules/@neur0base/app-sdk-react-router"],
+      "@jenify_ai/app-sdk-core": ["./node_modules/@neur0base/app-sdk-core"],
+      "@jenify_ai/app-sdk-ui": ["./node_modules/@neur0base/app-sdk-ui"]
     },
     "types": ["vite/client"],
     "allowJs": true,
