@@ -11,3 +11,4 @@ uncommittedStatus.json
 *.log
 .nfs*
 .gitkeep
+.next
