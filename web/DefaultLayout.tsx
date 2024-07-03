@@ -1,13 +1,19 @@
+
+'use client';
+import React, { ReactNode } from 'react';
+import { useRouter } from '@neur0base/app-sdk-router';
 import { StyleSheet } from 'react-native';
-import { flattenRoutes, isPublicRoute, useAppContext, useAuthContext, useUIContext, MenuItemConfig, MenuSectionConfig } from '@jenify_ai/app-sdk-core';
-import { useRouter } from '@jenify_ai/app-sdk-router';
-import { Icon } from '@jenify_ai/app-sdk-ui';
+import { flattenRoutes, isPublicRoute, useAppContext, useAuthContext, useUIContext, MenuItemConfig, MenuSectionConfig } from '@neur0base/app-sdk-core';
+import { Icon } from '@neur0base/app-sdk-ui';
 import { useEffect } from 'react';
 
-export default function DefaultLayoutComponent({ children }: { children: React.ReactNode }): JSX.Element {
-    const [ , { navigate } ] = useRouter();
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    const { getThemeColor } = useUIContext<never, any>(["LayoutRouteComponent"]);
+export default function DefaultLayout({
+  children,
+}: {
+  children: ReactNode
+}) {
+  const [_, { navigate }] = useRouter();
+  const { getThemeColor } = useUIContext<never, never>(["LayoutRouteComponent"]);
     const [ { config, routes } ] = useAppContext();
     const { isLoggedIn } = useAuthContext();
     const routesFlattened = flattenRoutes(routes || []);
