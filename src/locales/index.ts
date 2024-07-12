@@ -1,4 +1,4 @@
-import { LocalesConfig } from './types';
+import { LocalesConfig } from "@jenify_ai/app-sdk-core";
 
 const locales: LocalesConfig = {
 };

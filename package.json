@@ -5,10 +5,10 @@
   "scripts": {
     "test": "jest",
     "run:web": "next start",
-    "build:web": "next build",
+    "build:web": "pnpm prepare:web && next build",
     "dev:web": "next dev",
-    "build": "yarn build:web",
-    "prepare:web": "node node_modules/@neur0base/app-sdk-next-router/lib/commonjs/bin/genAppDir.js",
+    "build": "pnpm build:web",
+    "prepare:web": "node node_modules/@neur0base/app-sdk-next-router/lib/commonjs/scripts/genAppDir.js",
     "format": "prettier --write \"src/**/*.{ts,tsx}\"",
     "lint:all": "node node_modules/eslint/bin/eslint.js 'src/**/*.{js,jsx,ts,tsx}'",
     "lint": "node node_modules/eslint/bin/eslint.js",
