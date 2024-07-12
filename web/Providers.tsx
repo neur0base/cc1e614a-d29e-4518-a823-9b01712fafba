@@ -6,12 +6,11 @@ import {
   UIProvider
 } from '@neur0base/app-sdk-core';
 import { NavigationProvider } from '@neur0base/app-sdk-router';
-import instances from '@/src/config/instances';
+import instances from '@/src/config/dataModels';
 import themeColors from '@/src/config/themeColors';
 import locales from '@/src/locales';
-import appConfig from '@/src/routing/TwitterLikeApp/app';
-import routes from '@/src/routing/TwitterLikeApp/routes';
-import * as components from '@/src/routing/TwitterLikeApp/routes/index';
+import * as routings from '@/src/routing/index.config';
+import * as routes from '@/src/routing/routes';
 import { backend } from '@/web/backend';
 
 export default function Providers({
@@ -21,11 +20,11 @@ export default function Providers({
 }) {
   return (
     <AppContextProvider 
-        config={appConfig}
+        config={routings}
         backend={backend}
         instances={instances}
-        routes={routes}
-        components={components}
+        routes={Object.keys(routings).map((routingID) => routings[routingID]).flat()}
+        components={Object.keys(routes).map((routeID) => routes[routeID]).flat()}
         theme={{
           colors: themeColors,
         }}

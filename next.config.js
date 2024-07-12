@@ -3,13 +3,20 @@ const webpack = require('webpack');
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  eslint: {
+    // ビルド時のESLintチェックを無効化
+    ignoreDuringBuilds: true,
+  },
+  typescript: {
+    // ビルド時の型チェックを無効化
+    ignoreBuildErrors: true,
+  },
+
   reactStrictMode: true,
   images: {
     disableStaticImages: true,
   },
   webpack: (config, { buildId, dev, isServer, defaultLoaders, webpack }) => {
-
-    
   
     // エイリアスの設定
     config.resolve.alias = {

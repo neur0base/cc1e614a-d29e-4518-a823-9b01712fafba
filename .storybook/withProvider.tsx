@@ -1,21 +1,21 @@
 import React from 'react';
 import { initialize } from '@echopf/sdk';
-import instances from '../src/config/instances';
-import * as mockModels from '../src/components/mockModels';
-import { AppConfig, LayoutComponentConfig } from '@neur0base/app-sdk-core';
+import instances from '../src/config/dataModels';
+import { RoutingConfig } from '@neur0base/app-sdk-core';
 import * as components from '../src/components/views';
 import { AppContextProvider, UIProvider } from '@neur0base/app-sdk-core';
 import themeColors from '../src/config/themeColors';
 import locales from '../src/locales';
 
-export const appConfig: AppConfig = {
+export const appConfig: RoutingConfig = {
+  id: 'temp-app',
   name: 'Jenio Temp App',
   logo: {
     url: 'https://www.jenio.co/wp-content/uploads/2020/08/jenio-logo.png',
   },
   auth: {
     needLogin: false,
-    memberInstanceID: 'members',
+    memberModelID: 'members',
     afterLoginRouteID: 'home',
     loginRouteID: 'login',
   },
@@ -31,7 +31,6 @@ export const appConfig: AppConfig = {
     },
   ],
   mainRouteID: "home",
-  layout: {},
 };
 
 export default function withBackendProvider(Story, context) {
@@ -44,7 +43,6 @@ export default function withBackendProvider(Story, context) {
       instances={instances}
       routes={[]}
       components={components}
-      models={mockModels}
       >
       <UIProvider
         themeColors={themeColors}
