@@ -41,7 +41,8 @@
     "react-native-web": "^0.19.11",
     "storybook": "^8.0.9",
     "storycap": "^4.3.1",
-    "tailwind-rn": "3.0.1"
+    "tailwind-rn": "3.0.1",
+    "zod": "^3.23.8"
   },
   "devDependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
