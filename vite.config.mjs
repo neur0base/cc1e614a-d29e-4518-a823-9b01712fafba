@@ -15,7 +15,8 @@ const extensions = [
 export default defineConfig(({ mode }) => {
   const root = resolve(__dirname, `./web/`);
   const env = loadEnv(mode, process.cwd(), '');
-  const packageJson: { dependencies: Record<string, string> } = JSON.parse(
+  const isProd = mode === 'production';
+  const packageJson = JSON.parse(
     fs.readFileSync('package.json').toString(),
   );
   return {
@@ -48,6 +49,7 @@ export default defineConfig(({ mode }) => {
       rollupOptions: {
         input: resolve(root, 'index.html'),
       },
+      sourcemap: true,
     },
 
     resolve: {
@@ -67,12 +69,12 @@ export default defineConfig(({ mode }) => {
     },
 
     define: {
+      '__dirname': JSON.stringify(''),
       'process.env': {
-        ENVIRONMENT: env?.ENVIRONMENT || "development",
-        ROUTING_ID: env?.ROUTING_ID || "default_web_routing",
-        API_ENDPOINT: env?.API_ENDPOINT || "",
-        API_APP_ID: env?.API_APP_ID || "",
-        API_APP_KEY: env?.API_APP_KEY || "",
+        ENVIRONMENT: JSON.stringify(env.ENVIRONMENT || (isProd ? "production" : "development")),
+        API_ENDPOINT: JSON.stringify(env.API_ENDPOINT || "ｊっｈｇｈｇ"),
+        API_APP_ID: JSON.stringify(env.API_APP_ID || ""),
+        API_APP_KEY: JSON.stringify(env.API_APP_KEY || ""),
       },
     },
 

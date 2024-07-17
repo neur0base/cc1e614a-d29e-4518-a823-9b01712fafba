@@ -66,10 +66,7 @@ const nextConfig = {
                 'module:metro-react-native-babel-preset'
               ],
               plugins: [
-                // ['babel-plugin-inline-import', { extensions: ['.svg'] }],
-                // ['react-native-reanimated/plugin'],
                 ['react-native-web'],
-                // ["@babel/plugin-proposal-private-property-in-object", { "loose": true }]
               ],
             }
           },

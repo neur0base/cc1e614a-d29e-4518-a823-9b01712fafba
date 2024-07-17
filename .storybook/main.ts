@@ -4,33 +4,19 @@ export const framework = {
 };
 
 export const stories = [
-  '../src/**/*.mdx',
   '../src/**/*.stories.@(js|jsx|ts|tsx)',
-  '../src/**/**/*.stories.@(js|jsx|ts|tsx)',
-  '../src/**/*.story.@(js|jsx|ts|tsx)',
-  '../src/**/**/*.story.@(js|jsx|ts|tsx)',
 ];
 
 export const addons = [
   '@storybook/addon-links',
   '@storybook/addon-essentials',
-  // '@storybook/addon-interactions',
-  // 'storybook-react-i18next',
-  {
-    name: '@storybook/addon-postcss',
-    options: {
-      postcssLoaderOptions: {
-        implementation: require('postcss'),
-      },
-    },
-  },
 ];
 
 export const core = {
   builder: {
     name: '@storybook/builder-vite',
     options: {
-      viteConfigPath: './vite.config.ts',
+      viteConfigPath: './vite.config.mjs',
     },
   },
 };
