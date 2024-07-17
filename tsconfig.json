@@ -16,6 +16,15 @@
       ],
       "@jenify_ai/app-sdk-ui": [
         "./node_modules/@neur0base/app-sdk-ui"
+      ],
+      "@router": [
+        "./node_modules/@neur0base/app-sdk-next-router"
+      ],
+      "@core": [
+        "./node_modules/@neur0base/app-sdk-core"
+      ],
+      "@ui": [
+        "./node_modules/@neur0base/app-sdk-ui"
       ]
     },
     "types": [
