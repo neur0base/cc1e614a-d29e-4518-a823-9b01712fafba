@@ -44,7 +44,6 @@ export default defineConfig(({ mode }) => {
       outDir: resolve(
         __dirname,
         'dist',
-        process?.env?.ROUTING_ID || 'default_web_routing',
       ),
       rollupOptions: {
         input: resolve(root, 'index.html'),
@@ -72,7 +71,7 @@ export default defineConfig(({ mode }) => {
       '__dirname': JSON.stringify(''),
       'process.env': {
         ENVIRONMENT: JSON.stringify(env.ENVIRONMENT || (isProd ? "production" : "development")),
-        API_ENDPOINT: JSON.stringify(env.API_ENDPOINT || "ｊっｈｇｈｇ"),
+        API_ENDPOINT: JSON.stringify(env.API_ENDPOINT || ""),
         API_APP_ID: JSON.stringify(env.API_APP_ID || ""),
         API_APP_KEY: JSON.stringify(env.API_APP_KEY || ""),
       },

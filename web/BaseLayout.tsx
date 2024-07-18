@@ -1,4 +1,3 @@
-import './styles';
 import './globals.css';
 
 export default function BaseLayout({

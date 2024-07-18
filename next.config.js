@@ -11,11 +11,7 @@ const nextConfig = {
     // ビルド時の型チェックを無効化
     ignoreBuildErrors: true,
   },
-
   reactStrictMode: true,
-  images: {
-    disableStaticImages: true,
-  },
   webpack: (config, { buildId, dev, isServer, defaultLoaders, webpack }) => {
   
     // エイリアスの設定
@@ -36,13 +32,6 @@ const nextConfig = {
       '.web.tsx', '.web.ts', '.tsx', '.ts', '.web.js', '.js',
       ...config.resolve.extensions,
     ];
-
-    // ルールの追加
-    config.module.rules.push({
-      test: /\.ttf$/,
-      loader: "url-loader", // or directly file-loader
-      include: path.resolve(__dirname, "node_modules/react-native-vector-icons"),
-    });
 
     config.module.rules.push(
       {
@@ -72,15 +61,6 @@ const nextConfig = {
           },
         ],
       },
-      {
-        test: /\.(woff|woff2|eot|ttf|otf)$/,
-        use: ['file-loader'],
-      },
-      {
-        test: /\.(jpe?g|png|gif|svg)$/i,
-        loader: 'url-loader',
-        options: {},
-      }
     );
 
     // プラグインの追加
