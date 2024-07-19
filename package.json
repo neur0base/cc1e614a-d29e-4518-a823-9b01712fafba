@@ -16,11 +16,11 @@
     "test:storybook": "test-storybook"
   },
   "dependencies": {
-    "@core": "npm:@neur0base/app-sdk-core@^0.0.127",
+    "@core": "npm:@neur0base/app-sdk-core@^0.0.128",
     "@echopf/sdk": "^2.1.5",
-    "@neur0base/app-sdk-core": "^0.0.127",
-    "@neur0base/app-sdk-next-router": "^0.0.8",
-    "@neur0base/app-sdk-ui": "^0.0.64",
+    "@neur0base/app-sdk-core": "^0.0.128",
+    "@neur0base/app-sdk-next-router": "^0.0.9",
+    "@neur0base/app-sdk-ui": "^0.0.68",
     "autoprefixer": "^10.4.19",
     "moment": "2.30.1",
     "moment-timezone": "^0.5.45",

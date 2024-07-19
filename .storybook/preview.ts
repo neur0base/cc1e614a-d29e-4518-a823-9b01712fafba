@@ -1,7 +1,7 @@
 import type { Preview } from '@storybook/react';
 import { withScreenshot } from 'storycap';
 import withProvider from './withProvider';
-import '../web/styles';
+import '../web/globals.css';
 
 const preview: Preview = {
   globals: {
