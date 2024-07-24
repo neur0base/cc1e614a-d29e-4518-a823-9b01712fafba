@@ -17,14 +17,11 @@ const nextConfig = {
     // エイリアスの設定
     config.resolve.alias = {
       ...config.resolve.alias,
-      'react-native$': 'react-native-web',
-      /*
-      'react-native-twilio-video-webrtc': path.resolve(__dirname, './src/temp/NotProvided/index.tsx'),
-      'react-native-push-notification': path.resolve(__dirname, './src/temp/NotProvided/PushNotification.tsx'),
-      'react-native-fs': path.resolve(__dirname, './src/temp/NotProvided/RNFS.tsx'),
-      'react-native-permissions': path.resolve(__dirname, './src/temp/NotProvided/RNPermissions.tsx'),
-      */
+      '@router': '@neur0base/app-sdk-next-router',
+      '@core': '@neur0base/app-sdk-core',
+      '@ui': '@neur0base/app-sdk-ui',
       '@/src': path.resolve(__dirname, './src'),
+      'react-native$': 'react-native-web',
     };
 
     // 拡張子の設定

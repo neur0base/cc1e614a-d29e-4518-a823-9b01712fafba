@@ -23,7 +23,9 @@ const preview: Preview = {
       delay: 10,
       fullPage: false,
     },
-    // i18n,
+    nextjs: {
+      appDirectory: true,
+    },
   },
   loaders: [],
   decorators: [

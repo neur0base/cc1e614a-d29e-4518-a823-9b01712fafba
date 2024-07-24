@@ -1,9 +1,9 @@
 import React from 'react';
 import { initialize } from '@echopf/sdk';
 import instances from '../src/config/dataModels';
-import { RoutingConfig } from '@neur0base/app-sdk-core';
 import * as components from '../src/components/views';
-import { AppContextProvider, UIProvider } from '@neur0base/app-sdk-core';
+import { RoutingConfig, AppContextProvider, UIProvider, NavigationProvider } from '@core';
+// import { NavigationProvider } from '@router';
 import themeColors from '../src/config/themeColors';
 import locales from '../src/locales';
 
@@ -48,7 +48,9 @@ export default function withBackendProvider(Story, context) {
         themeColors={themeColors}
         locales={locales}
         >
-        <Story {...context} />
+        <NavigationProvider>
+          <Story {...context} />
+        </NavigationProvider>
       </UIProvider>
     </AppContextProvider>
   );

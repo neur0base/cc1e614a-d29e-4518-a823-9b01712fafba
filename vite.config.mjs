@@ -53,14 +53,10 @@ export default defineConfig(({ mode }) => {
 
     resolve: {
       alias: {
-        '@': path.resolve(__dirname, './'),
-        '@neur0base/app-sdk-router': '@neur0base/app-sdk-next-router',
-        '@jenify_ai/app-sdk-router': '@neur0base/app-sdk-next-router',
-        '@jenify_ai/app-sdk-core': '@neur0base/app-sdk-core',
-        '@jenify_ai/app-sdk-ui': '@neur0base/app-sdk-ui',
         '@router': '@neur0base/app-sdk-next-router',
         '@core': '@neur0base/app-sdk-core',
         '@ui': '@neur0base/app-sdk-ui',
+        '@/src': path.resolve(__dirname, './src'),
         'react-native': 'react-native-web',
       },
       extensions,
